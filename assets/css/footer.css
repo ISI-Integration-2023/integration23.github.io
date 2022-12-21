@@ -1,0 +1,27 @@
+footer {
+    color: #fff;
+    background: black;
+}
+
+.fa-facebook-official:hover {
+    color: #3b5998 !important;
+    text-shadow: 0px 0px 20px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 5px white !important;
+}
+
+.fa-twitter:hover {
+    color: #00acee !important;
+    text-shadow: 0px 0px 20px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 5px white !important;
+}
+
+.fa-envelope:hover {
+    color: #d44638 !important;
+    text-shadow: 0px 0px 20px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 5px white !important;
+}
+
+.footer-copyright {
+    color: #fff;
+}
+
+.footer-copyright a:hover {
+    color: #fff;
+}

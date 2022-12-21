@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Overlock:wght@700&family=Piedra&family=Squada+One&display=swap');
+
+/* ----------- PRELOADER ---------- */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100vh;
+    overflow-y: none;
+    background: #fff url("../../AppData/Images/preloader.gif") no-repeat center center;
+}
+
+/* --------- NAVBAR ------------- */
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+    padding-bottom: 0;
+}
+
+/* ------- SLIDER AREA --------- */
+
+.slider-content {
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.slider-content .main-heading {
+    font-family: "Piedra", "Merienda One";
+    text-shadow: 2px 2px #273746, 5px 5px 6px #273746, 2px 0px 2px #273746, 2px -2px 5px #273746;
+}
+
+.btn-type-1 {
+    margin: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #273746;
+    background: white;
+    border: 3px solid #273746;
+    font-weight: bolder;
+}
+
+.btn-type-1:hover {
+    color: white;
+    background: #273746;
+    border: 3px solid white;
+}
+
+.btn-type-2 {
+    margin: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    background: #273746;
+    border: 3px solid #fff;
+    font-weight: bolder;
+}
+
+.btn-type-2:hover {
+    color: #273746;
+    background: #fff;
+    border: 3px solid #273746;
+}
+
+/* ----- ABOUT AREA -------- */
+
+#about-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: url("../../AppData/Images/about_cover.jpg");
+    background-color: #353535;
+    background-blend-mode: overlay;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-container .full-overview {
+    font-family: "Lexend", sans-serif;
+    font-size: 19px;
+    /*font-style: italic;*/
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem 3rem;
+    border-radius: 25px;
+}
+
+.about-heading {
+    font-family: "Abril Fatface", cursive;
+    text-shadow: 2px 2px 3px black, 3px 3px 5px black;
+}
+
+#about-heading-rule {
+    margin-top: 3rem;
+    border: 5px solid #fff;
+    box-shadow: 2px 2px 3px black, 3px 3px 5px black;
+}
+
+/* ---------- EVENT SECTION ------------- */
+
+#events > .card {
+    background: url("../../AppData/Images/event_cover.jpg");
+    background-color: #444;
+    background-blend-mode: overlay;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#events .eventScroller-cell {
+    width: 100%;
+}
+
+#events .flickity-button {
+    opacity: 0.3;
+}
+
+#events .eventScroller-cell .card {
+    height: 100%;
+}
+
+.event-title {
+    font-family: "Squada One";
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    line-height: 2rem;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.event-description {
+    font-family: "Overlock";
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.event-btn {
+    font-weight: bolder;
+    color: #273746;
+    background: aquamarine;
+}
+
+.event-btn:hover {
+    color: #273746;
+    background: #fff;
+}
+
+.flickity-prev-next-button.previous {
+    left: -15px;
+}
+
+.flickity-prev-next-button.next {
+    right: -15px;
+}
+
+
+.wrapper {
+    margin: 3em 0;
+}
+
+a.math-link,
+a.math-link:visited,
+a.math-link:hover,
+a.math-link:active {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+    color: #81b3d2 !important;
+    font-size: 200%;
+    line-height: 5rem;
+}
+a.math-link:hover {
+    color: #d73444 !important;
+}
+
+a.math-link:after {
+    display:block;
+    content: '';
+    border-bottom: 5px solid #d73444;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+
+a.math-link:hover:after {
+    transform: scaleX(1);
+}
+
+/* ------- SHOWDOWN Section -------- */
+
+.showdown-title {
+    font-family: "Bookman Old Style";
+    font-style: italic;
+    text-shadow: 3px 3px 5px black;
+}
+
+/* ---------- TEAM AREA -------- */
+
+#team button {
+    width: 100%;
+}
+
+#team button:not(:hover) {
+    background-blend-mode: soft-light;
+}
+
+#team button:hover {
+    background-size: 100% !important;
+    background-blend-mode: multiply;
+}
+
+#team button h2,
+#team button p {
+    color: black;
+    font-weight: bolder;
+    text-shadow: 2px 2px 10px white, -2px -2px 10px white;
+}
+
+#team button:hover h2 {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    transition-duration: 1s;
+}
+
+#team button:hover p {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    transition-duration: 1s;
+}
+
+#team .card-deck {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#team .card-deck .card {
+    max-width: 250px;
+    margin: auto;
+}
+
+#team .card-deck .card-img {
+    border-radius: 5%;
+}
+
+#team .card-deck .card-img-overlay {
+    -webkit-animation: slideOutDown 1s;
+    animation: slideOutDown 1s;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+#team .card-deck .card-img-overlay a {
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    font-weight: 500;
+}
+
+#team .card-deck .card:hover .card-img-overlay {
+    opacity: 1;
+    -webkit-animation: slideInUp 1s;
+    animation: slideInUp 1s;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    font-weight: 500;
+}
+
+#team .card-deck .card:hover .card-img {
+    opacity: 0.3;
+}
+
+/* ------------ SPONSORS SECTION --------- */
+
+.sponsorImg {
+    background: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* ---------- SCROLL TO TOP BUTTON ------------- */
+
+.scroll-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #273746;
+    background: rgba(255, 255, 255, 0.8);
+    line-height: 46px;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+    color: #273746;
+}
+
+.scroll-to-top:hover {
+    background: rgba(81, 239, 250, 0.8);
+}
+
+.scroll-to-top i {
+    font-weight: 1000;
+}
+
+/* -------- RESPONSIVE ------------*/
+
+@media screen and (min-width: 512px) {
+    /* half-width cells for larger devices */
+    #events .eventScroller-cell {
+        width: 50%;
+    }
+    #full-overview {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* half-width cells for larger devices */
+    #events .eventScroller-cell {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .lg-viewer {
+        display: none;
+    }
+
+    .sm-viewer {
+        display: block;
+    }
+
+    .nivo-directionNav {
+        display: none;
+    }
+
+    .nivo-prevNav {
+        display: none;
+    }
+
+    .nivo-nextNav {
+        display: none;
+    }
+
+    .nivo-controlNav {
+        display: none;
+    }
+
+    #about-container {
+        text-align: center;
+    }
+
+    #about-container > .row {
+        width: 90%;
+        margin: auto;
+    }
+
+    #full-overview {
+        margin-left: 0;
+        max-height: 50vh;
+        overflow-y: scroll;
+    }
+}

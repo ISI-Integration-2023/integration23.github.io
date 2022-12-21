@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Subhrajyoty Roy">
+    <title>Cultural Chapter | Integration</title>
+    <link rel="icon" href="./img/integration_logo_icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/culturestyle.css" />
+    <!-- Font Awesome -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+
+    <!--body {font-family: Arial, Helvetica, sans-serif;}-->
+<style>
+/* The Modal (background) */
+
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding:0;
+  border: 2px solid #888;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.thumbnails {
+    text-align:center;
+}
+
+.thumbnails > li {
+    display: inline-block;
+    *display:inline; /* ie7 fix */
+    float: none; /* this is the part that makes it work */
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 20px 20px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 16px 16px;}
+
+.modal-footer {
+  padding: 16px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.block {
+            display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: left;}
+                    .block:click {
+  background-color: #ddd;
+  color: black;
+}
+
+.block2 {
+            display: block;
+                    border-radius: 6px;
+                    width: 60%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: center;}
+                    .block:click {
+  background-color: #ddd;
+  color: black;}
+
+  .block3 {
+            display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: center;}
+                    .block:click {
+  background-color: #ddd;
+  color: black;
+}
+
+
+  #outer
+{
+    width:100%;
+    text-align: left;
+}
+.inner
+{
+    display: inline-block;
+}
+
+                    details > summary {
+                        display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: left;
+}
+details>summary:hover{
+    background-color: #ddd;
+  color: black;
+}
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  width:100%;
+  margin: 3;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}  
+
+details2 > summary {
+                        display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: left;
+}
+
+
+.caret {
+    display: inline-block;
+    width: 10;
+    height: 10;
+    margin-left: 2px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border-top: 6px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;            
+}
+</style>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").css({
+                'overflow-x':'hidden',
+                'overflow-y':'auto',
+                'width':'100%',
+            });
+            $(".card-link").click(function(){
+                $("main").css({
+                    background: "#444",
+                    'background-blend-mode':'lighten',
+                });
+            });
+            $(".close").click(function(){
+                $("main").css({
+                    background: "url('./img/culturalfest/culture-cover.jpg')",
+                    'background-size': 'cover',
+                    'background-position': 'center center',
+                });
+            });
+
+            var text = "<marquee>";
+            var i;
+            for (i = 1; i < 22; i++) {
+                text += "<img src='./img/sponsors/" + i + ".jpg' style = 'height:75px'>";
+            }
+            text += "</marquee>";
+            $('#footer-sponsor').html(text);
+        });
+
+
+
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+    
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg unique-color-dark fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" style="color:#fff" href="./index.html">
+                    <img src="./img/Integration_logo.png" height="30" class="d-inline-block align-top" alt="">
+                    Integration 2023
+                </a>
+                    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                                <i class="fa fa-envelope ml-5 gylphs"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a href="https://www.facebook.com/integration.isi">
+                                    <i class="fa fa-facebook-official ml-5 gylphs"></i>
+                                </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.twitter.com/integration_isi">
+                                <i class="fa fa-twitter ml-5 gylphs"></i>
+                            </a>
+                        </li>
+
+                            
+                    </ul>
+
+            </div>
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+    <main>
+        
+            <div class="container">
+                <section class="text-center">
+                        <h1 class="mb-5 mt-5 pt-5 display-1" id="main-title">Cultural Chapter</h1>
+                        <hr>
+                        <h1 class="mb-3 mt-3" id="festname">Integration <span>2023</span>
+                            <img src="./img/Integration_logo.png" style="width: 50px">
+                        </h1>
+                        <hr>
+                </section>
+                <!--<section class="text-justify">
+                    <div class="jumbotron">
+                        <h1 class="display-4">Important Notice!</h1>
+                        <p class="lead">Please note that the details about Prize Money and Registration Fees mentioned in the website is <strong>NOT UP TO DATE</strong>. 
+                            Please refer to <a href="https://www.facebook.com/integration.isi/" target="_blank"> our facebook page</a> for the correct details.
+                            The correct details will be updated here soon enough.
+                        </p>
+                    </div>
+                </section>-->
+                <div class="card-deck mb-5 mt-5">
+        
+                    <div class="col-sm-7">
+                            <div class="card" style="background: transparent">
+                                <div class="card-deck">
+                                    <!--Nikkana-->
+                                    <a type="button" class="card card-link" data-toggle="modal" data-target="#solo-dance">
+                                            <img class="card-img-top" src="./img/culturalfest/girl-dancing-silhouette-2.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Nikkana (Solo, Duet Dance)</h5>
+                                            <p class="card-text">Your body is an instrument that you play to the symphony of dance. This Solo-Dance event has
+                                                    provided year-after-year a stage for the amalgam of Indian and Western Dance categories,
+                                                    where top 20 participants will out-perform each other in Indian/Western Category to lose
+                                                    themselves to this symphony of Dance.
+                                                    </p>
+                                            </div>
+                                    </a>
+                                    <div class="modal fade" id="solo-dance" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title" id="exampleModalLongTitle">Nikkana (Solo & Duet Dance)</h2>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                <div class="modal-body">
+                                                </br>
+
+                                                <details>
+                  
+                                                    <summary><h4><span class="caret"></span>Event Poster</h4></summary>
+                                                </br></br>
+    
+    
+                                                <div class="center">
+                                                    <div class="thumbnails">
+                                                        <a href="./img/posters/nj.jpeg" target="_blank">
+                                                            <img src="./img/posters/nj.jpeg"  style="width: 35%" >
+                                                        </a>
+                                                    </div>
+                                                    </div>
+                                                    </details>
+                                                </br></br>
+
+                                                    <details>
+                  
+                                                        <summary><h4><span class="caret"></span> Prize Pool: Rs. 4000</h4></summary>
+                                                    
+                                                    </br> 
+
+                                    
+                                                <ol>
+                                                    <li><strong>Winners: </strong>Rs. 2000</li>
+                                                    <li><strong>1st Runners-Up: </strong>Rs. 1250</li>
+                                                    <li><strong>2nd Runners-Up: </strong>Rs. 750</li>
+                                                    </ol>
+                                                    </details>
+                                                </br></br>
+
+                                                <details>
+                  
+                                                    <summary><h4><span class="caret"></span>Date & Timings</h4></summary>
+                                                
+                                            </br>
+                                            <ol>
+                                                <li><strong>Preliminary Round: </strong>4th February, 2023, 10 AM onwards</li>
+                                                <li><strong>Final Round: </strong>5th February, 2023, 10 AM onwards</li>
+                                
+                                                </ol>
+                                                </details>
+                                            </br></br>
+
+                                            <details>
+                  
+                                                <summary><h4><span class="caret"></span>Registration</h4></summary>
+                                            
+                                        </br>
+        
+                                                </br>
+                                                 <div class="d-flex justify-content-center">
+                                                    <button onclick="popup('integration-nj-23');" class="tsbutton">Register Now</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
+                                                 </div>
+                                                </br></br>
+                                                <ol>
+                                                    <li><strong>Solo: </strong>Rs. 150</li>
+                                                    <li><strong>Duet: </strong>Rs. 250 (Rs. 125 for each participant)</li>
+                                                     </ol>   
+                                            </details>
+                                                </br></br>
+
+                                                
+                                                <details>
+                  
+                                                    <summary><h4><span class="caret"></span>Rules and Regulations</h4></summary>
+                                                
+                                            </br>
+        
+                                                <ol>
+                                                    <li>There will be <emph>two</emph> separate categories for <strong>Eastern</strong> and <strong>Western</strong> dance forms. Fusion dance is not allowed.</li></br>
+                                                    <li>The performances can either be <strong>Solo</strong> or <strong>Duet</strong>.</li></br>
+                                                    <li>Particpants must be atleast <strong>14 years</strong> of age as on <strong>31st January, 2023.</strong></li></br>
+                                                    <li>Participants must reach Registration Desk atleast <strong>30 minutes</strong> before the scheduled time of event.</li></br>
+                                                    <li>Each participant must bring <strong>valid school or college ID Card</strong> in order to be considered for prizes.</li></br>
+                                                    <li><strong>No props</strong> will be provided by the organisers. Participants are requested not to use any prop or act which may cause harm to themselves or anyone present in the auditorium.</li></br>
+                                                    <li>Each performance will be alloted a maximum of <strong>3 minutes</strong>. The stage must be cleared of all props after the performance by the participant within <strong>2 minutes</strong>. Thus, a maximum of
+                                                    <strong>5 minutes</strong> is alloted to the participant(s), within which they have to perform and clar all props. Violation of this rule will result in <strong>deduction of marks</strong>
+                                                    and may even lead to <strong>disqualification from the competition</strong>.</li></br>
+                                                    <li>Vulgarity of any kind would lead to instant disqualification from the event. Hence, if the participant feels that the outfit/performance can be deemed as vulgar, it is strongly advised to consult the organisers
+                                                        before putting it on stage. The descion of the organisers will be final in case of any disputes arising due to this reason.
+                                                    </li>     </br>
+                                                    <li>The <strong>top 10</strong> performances after the prelims in each category will advance to the final round. The finalists will be asked to perform from a set of songs suggested by the judges and will be alloted on a lottery basis.</li> </br>
+                                                    <li>The organisers reserve the right to change any of the rules, timings and other details at any point of time. In case of any dispute, the decsion of the organisers will be final.</li>                                              
+                                                    </ol>
+                                            </details>
+                                                </br></br>
+        
+                                                <details>
+                  
+                                                    <summary><h4><span class="caret"></span>Contact Us</h4></summary>
+                                                
+                                            </br>
+        
+                                               
+                                                </br>
+                                               
+                                                <ul>
+                                                    <li><strong>Email: </strong> <a href=mailto:nikkanajhankar.integration.isik@gmail.com>nikkanajhankar.integration.isik@gmail.com</a></li>
+                                                    <li><strong>Arunav Bhowmick: </strong> 8806020408</li>
+                                                    <li><strong>Sevantee Basu:</strong> 8100186364</li>
+                                                    <li><strong>Valay Shah: </strong> 6355880353</li>
+                                                    <li><strong>Swapnamoy Samadder: </strong> 6289997536</li>
+                                                </ul>
+                                                </details>
+                                            </br></br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                     
+                                    <!--Nikkana-->
+
+                                    <!--Jhankar-->
+                                        <a type="button" class="card card-link" data-toggle="modal" data-target="#group-dance">
+                                                <img class="card-img-top" src="./img/culturalfest/IMG_5826.JPG" alt="Card image cap">
+                                                <div class="card-body">
+                                                <h5 class="card-title">Jhankar (Group Dance)</h5>
+                                                <p class="card-text">This group-dance event portrays the Human Clockwork of art and precision, where the best
+                                                        Dance Groups across the terrain will Integrate to gear up to become a dance machine. These
+                                                        teams will compete in Indian/Western Category of group dance events.
+                                                        </p>
+                                                </div>
+                                        </a>
+                                        <div class="modal fade" id="group-dance" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2 class="modal-title" id="exampleModalLongTitle">Jhankar (Group Dance)</h2>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                    <div class="modal-body">
+                                                    </br></br>
+
+                                                    <details>
+                  
+                                                        <summary><h4><span class="caret"></span>Event Poster</h4></summary>
+                                                    </br></br>
+        
+        
+                                                    <div class="center">
+                                                        <div class="thumbnails">
+                                                            <a href="./img/posters/nj.jpeg" target="_blank">
+                                                                <img src="./img/posters/nj.jpeg"  style="width: 35%" >
+                                                            </a>
+                                                        </div>
+                                                        </div>
+                                                        </details>
+                                                    </br></br>
+
+                                                        <details>
+                  
+                                                            <summary><h4><span class="caret"></span>Prize Pool: Rs. 6000</h4></summary>
+                                                        
+                                                    </br>
+                                                       
+                                                    </br>
+                                                    <ol>
+                                                        <li><strong>Winners: </strong>Rs. 3500</li>
+                                                        <li><strong>Runners-Up: </strong>Rs. 2500</li>
+                                                        </ol>
+                                                    </details>
+
+                                                    </br></br>
+                                                    
+                                                    <details>
+                  
+                                                        <summary><h4><span class="caret"></span>Date & Timings</h4></summary>
+                                                    </br>
+                                                    <ol>
+                                                        <li><strong>Date:</strong> 4th February, 2023</li>
+                                                        <li><strong>Time:</strong> 3 PM onwards</li>
+
+
+                                                    </ol>
+                                                        
+                                                    </details>
+                                                </br>
+    
+                                               </br>
+
+
+                                               <details>
+                  
+                                                <summary><h4><span class="caret"></span>Registration</h4></summary>
+                                            </br>
+            
+                
+                                                    </br>
+                                                     <div class="d-flex justify-content-center">
+                                                        <button onclick="popup('integration-nj-23');" class="tsbutton">Register Now</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
+                                                     </div>
+                                                    </br></br>
+                                                    <ol>
+                                                        <li><strong>3-5 Members Group: </strong>Rs. 400</li>
+                                                        <li><strong>6-12 Members Group: </strong>Rs. 600 </li>
+                                                         </ol> 
+                                                </details>  
+                                                    </br></br>
+
+                                                    <details>
+                  
+                                                        <summary><h4><span class="caret"></span>Rules and Regulations</h4></summary>
+                                                    </br>
+            
+                                                    
+                                                    </br>
+                                                    <ol>
+                                                        <li>Both <strong>Eastern</strong> and <strong>Western</strong> dance groups will compete together. Fusion dance is allowed.</li></br>
+                                                        <li>The teams can consist of <strong>3</strong> to <strong>12 members</strong>.</li></br>
+                                                
+                                                        <li>Teams must reach Registration Desk atleast <strong>30 minutes</strong> before the scheduled time of event.</li></br>
+                                                        <li>Each participant must bring <strong>valid school or college ID Card</strong> in order to be considered for prizes.</li></br>
+                                                        <li><strong>No props</strong> will be provided by the organisers. Participants are requested not to use any prop or act which may cause harm to themselves or anyone present in the auditorium.</li></br>
+                                                        <li>Each performance will be alloted a maximum of <strong>6 minutes</strong>. The stage must be cleared of all props after the performance by the team within <strong>2 minutes</strong>. Thus, a maximum of
+                                                        <strong>8 minutes</strong> is alloted to the team, within which they have to perform and clar all props. Violation of this rule will result in <strong>deduction of marks</strong>
+                                                        and may even lead to <strong>disqualification from the competition</strong>.</li></br>
+                                                        <li>Vulgarity of any kind would lead to instant disqualification from the event. Hence, if the dance group feels that the outfit/performance can be deemed as vulgar, it is strongly advised to consult the organisers
+                                                            before putting it on stage. The descion of the organisers will be final in case of any disputes arising due to this reason.
+                                                        </li>     </br>
+                                                        
+                                                        <li>The organisers reserve the right to change any of the rules, timings and other details at any point of time. In case of any dispute, the decsion of the organisers will be final.</li>                                              
+                                                        </ol>
+                                                        </details>
+                                                    
+            
+                                                </br></br>
+
+
+                                                
+                                                <details>
+                  
+                                                    <summary><h4><span class="caret"></span>Contact Us</h4></summary>
+                                                </br>
+            
+                                                    </br>
+                                                   
+                                                    <ul>
+                                                        <li><strong>Email: </strong> <a href=mailto:nikkanajhankar.integration.isik@gmail.com>nikkanajhankar.integration.isik@gmail.com</a></li>
+                                                        <li><strong>Arunav Bhowmick: </strong> 8806020408</li>
+                                                        <li><strong>Sevantee Basu:</strong> 8100186364</li>
+                                                        <li><strong>Valay Shah: </strong> 6355880353</li>
+                                                        <li><strong>Swapnamoy Samadder: </strong> 6289997536</li>
+                                                    </ul>
+                                                    </details>
+                                                </br></br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--Jhankar-->
+                                
+                                    
+                                </div>
+        
+                                <div class="card-deck mt-3">
+                                    <!--contrapunto-->
+                                        <a type="button" class="card card-link" data-toggle="modal" data-target="#contrapunto">
+                                            <img class="card-img-top" src="./img/culturalfest/pexels-photo-210777.jpeg" alt="Card image cap">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Model United Nations</h5>
+                                            <p class="card-text">Where the power of speech shall wipe out the inconsistencies in reasoning.</p>
+                                            </div>
+                                        </a>
+                                        <div class="modal fade" id="contrapunto" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2 class="modal-title" id="exampleModalLongTitle">Model United Nations (MUN)</h2>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                    <div class="modal-body">
+                                                    </br></br>
+
+                                                    <details>
+                  
+                                                        <summary><h4><span class="caret"></span>Event Poster</h4></summary>
+                                                    </br></br>
+        
+        
+                                                    <div class="center">
+                                                        <div class="thumbnails">
+                                                            <a href="./img/posters/alaap23.jpeg" target="_blank">
+                                                                <img src="./img/posters/alaap23.jpeg"  style="width: 35%" >
+                                                            </a>
+                                                        </div>
+                                                        </div>
+                                                        </details>
+                                                    </br></br>
+
+                                                        <details>
+                  
+                                                            <summary><h4><span class="caret"></span>Prize Pool: Rs. 7000</h4></summary>
+                                                        
+                                                    </br>
+                                                        </br>
+
+                                                        <ol>
+                                                        <li> <strong>Winners:</strong> Rs.4000</li>
+                                                        <li> <strong>Runners Up:</strong> Rs.2000</li> 
+                                                         <li>  <strong>Best Speaker</strong> Rs.1000.</li> 
+                                                        </ol>
+                                                        </details>
+                                                    </br></br>
+                                                       <details>
+                  
+                                                        <summary><h4><span class="caret"></span>Date & Timings</h4></summary>
+                                                    </br>
+                                                    <ol>
+                                                        <li><strong>Date:</strong> 4th February, 2023</li>
+                                                        <li><strong>Time:</strong> 10 AM onwards</li>
+
+
+                                                    </ol>
+                                                        
+                                                    </details> </br>
+                                               </br>
+
+                                               <details>
+                  
+                                                <summary><h4><span class="caret"></span>Registration</h4></summary>
+                                            
+                                        </br>
+                                            </br>
+
+            
+                                                    <strong> Registration Fees: Rs. 400</strong> per Team
+                                                    </br>
+                                                     <div class="d-flex justify-content-center">
+                                                        <button onclick="popup('integration-mun-23');" class="tsbutton">Register Now</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
+                                                     </div>
+                                                     </details>
+                                                    
+                                                    </br></br>
+
+                                                    <details>
+                  
+                                                        <summary><h4><span class="caret"></span>Rules and Regulations</h4></summary>
+                                                    
+                                                </br>
+                                                    </br>
+            
+                                                   
+                                                    <ol>
+                                                        <li>The debate will be conducted in two rounds.</li></br>
+                                                        <li>The first round will be an extemporaneous debate held on the first day, and 4 teams will qualify into the finals.</li></br>
+                                                        <li>The final round will be held in the parliamentary-style on the second day.</li></br>
+                                                        <li>All students must carry a student-identity card.</li></br>
+                                                        <li>In case you are unable to arrange for your partner, you can still register. We will try to pair two single registrations into one team if both the members agree.</li></br>
+                                                    
+                                                        <li>The organisers reserve the right to change any of the rules, timings and other details at any point of time. In case of any dispute, the decsion of the organisers will be final.</li>                                              
+                                                        </ol>
+                                                    </details>
+            
+                                                </br></br>
+
+                                                <details>
+                  
+                                                    <summary><h4><span class="caret"></span>Contact Us</h4></summary>
+                                                
+                                            </br>
+                                                </br>
+        
+                                                   
+                                                    <ul>
+                                                        <li><strong>Email: </strong> <a href=mailto:nikkanajhankar.integration.isik@gmail.com>nikkanajhankar.integration.isik@gmail.com</a></li>
+                                                        <li><strong>Souvik Roy: </strong> 8806020408</li>
+                                                        <!--<li><strong>Sevantee Basu:</strong> 8100186364</li>
+                                                        <li><strong>Valay Shah: </strong> 6355880353</li>
+                                                        <li><strong>Swapnamoy Samadder: </strong> 6289997536</li>-->
+                                                    </ul>
+                                                       </details></br></br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--contrapunto-->
+                                </div>
+                            </div>
+                    </div>
+
+
+                    <div class="col-sm-5">
+                        <!--Alaap-->
+                            <a type="button" class="card card-link" data-toggle="modal" data-target="#Alaap">
+                                    <img class="card-img-top" src="./img/culturalfest/alaap-cover.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Alaap (Singing)</h5>
+                                    <p class="card-text">Integration presents one of the greatest singing competitions of the city giving an opportunity to showcase your talents.</p>
+                                    <p class="card-text"><small class="text-muted">Time and Venue</small></p>
+                                    </div>
+                            </a>
+                            <div class="modal fade" id="Alaap" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalLongTitle">Alaap (Singing)</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+
+                                    </br></br>
+
+                                    <details>
+                  
+                                        <summary><h4><span class="caret"></span>Event Poster</h4></summary>
+                                    </br></br>
+
+
+                                    <div class="center">
+                                        <div class="thumbnails">
+                                            <a href="./img/posters/alaap23.jpeg" target="_blank">
+                                                <img src="./img/posters/alaap23.jpeg"  style="width: 35%" >
+                                            </a>
+                                        </div>
+                                        </div>
+                                        </details>
+                                    </br></br>
+
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Prize Pool: Rs. 8000</h4></summary>
+                                        
+                                    </br>
+                                        </br>
+                  
+                                        <ol>
+                                            <li><strong>Solo: </strong>Rs. 3000</li>
+                                            <li><strong>Duet: </strong>Rs. 5000</li>
+                                            </ol>
+                                            </details>
+                                        </br></br>
+
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Date & Timings</h4></summary>
+                                        
+                                    </br>
+                                        </br>
+
+                                        <ol>
+                                            <li><strong>Date:</strong> 4th & 5th February, 2023</li>
+                                            <li><strong>Time:</strong> 10 AM onwards</li>
+
+
+                                        </ol>
+                                            
+                                        </details> 
+                                        
+                                                </br>
+                                               </br>
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Registration</h4></summary>
+                                            
+                                        </br>
+                                           
+                                        </br>
+                                         <div class="d-flex justify-content-center">
+                                            <button onclick="popup('integration-alaap-23');" class="tsbutton">Register Now</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
+                                         </div>
+                                        </br></br>
+                                        <ol>
+                                            <li><strong>Solo: </strong>Rs. 150</li>
+                                            <li><strong>Duet: </strong>Rs. 250 (Rs. 125 for each participant)</li></br>
+                                            <li> If you and your partner want to perform <strong>both</strong> solo performances individually, and a duet performance togther, we
+                                                have a <strong>special discount</strong> for you! Just pay <strong>Rs. 225</strong> individually, instead of <strong>Rs. 275</strong> (150 for Solo & 125 for Duet).
+                                                Thus, you and your partner have to pay a total of Rs. 450 only instead of Rs. 550.
+
+                                            </li></br>
+                                            <li>Note that the above discount is available only if you are filling the form for <strong>Solo & Duet</strong>.</li>
+                                            </ol>   
+                                            </details>
+                                        </br></br>
+
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Rules and Regulations</h4></summary>
+                                            
+                                        </br>
+                                    
+                                        <h4><strong>General Rules:</strong></h4>
+                                        </br>
+                                        <ol>
+                                            <li>Participants must belong to the age group <strong>15</strong> to <strong>35 years</strong>.</li></br>
+                                            <li>Each participant must carry some valid ID proof.</li></br>
+                                            <li>Particpants have to give either <emph>solo</emph> or <emph>duet</emph> performances.</li></br>
+                                            <li> <strong>Duration </strong>: maximum <strong>10 minutes</strong> (for both solo and duet).</li></br>
+                
+                                            <li>Recorded tracks are allowed. The participant has to submit the recorded track in a CD. It is advisable to bring a copy in a pen-drive to avoid unforeseen difficulties.</li></br>
+                                            <li>The judges' choice will be taken as final.</li></br>
+                                            <li>The organizers have the right to disqualify any participant if they find any on-stage comment or gesture illicit or inappropriate to the occasion.</li>
+                                        
+                                            </ol>
+                                        </br></br>
+
+                                        <h4><strong>Instruments:</strong></h4>
+                                        </br>
+                                        <ol>
+                                            <li>Participants can be accompanied by instruments. No other instrument except <strong>harmonium</strong>, <strong>tabla</strong> or <strong>synthesizer</strong> will be provided by the organisers.</li></br>
+                                            <li> <strong>Solo:</strong> Each participant can either use a recorded track OR maximum two instruments at a time. If the participant plays any instrument, it will be counted as one. Maximum two persons will be 
+                                            allowed including instrumentalist.</li></br>
+                                            <li> <strong>Duet:</strong> Each group can either use a recorded track OR maximum two instruments at a time. If the participant plays any instrument, it will be counted as one. Extra instrumentalists
+                                            apart from the singers will not be allowed, i.e., exactly two persons will have to perform.</li>
+                                    
+                                        </ol>
+                                        </details>
+
+
+                                    </br></br>
+
+                                    <details>
+                  
+                                        <summary><h4><span class="caret"></span>Contact Us</h4></summary>
+                                        
+                                    </br>   
+                                        </br>
+
+                                        <ul>
+                                            <li><strong>Email: </strong> <a href=mailto:alaap.integration.isikol@gmail.com>alaap.integration.isikol@gmail.com</a></li>
+                                            <li><strong>Samahriti Mukherjee:</strong> 6290309878</li>
+                                            <li><strong>Reetanjan Roychowdhury:</strong> 8777462767</li>
+                                            <li><strong>Srijan Chatterjee: </strong> 9163885964</li>
+                                            <li><strong>Drohan Chakraborty: </strong> 6291939639</li>
+                                        </ul>
+                                        </details></br></br>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <!--Alaap-->
+
+                       
+                    
+                
+                    <div class="card-deck mt-3">
+                        <!--Thru-da-lens-->
+                        <a type="button" class="card card-link" data-toggle="modal" data-target="#thru-da-lens">
+                            <img class="card-img-top" src="./img/culturalfest/vintage-camera-wood-wood-background-34886769.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Thru-da-Lens (Photography)</h5>
+                            <p class="card-text">"Life is like photography. We develop from the negatives"</p>
+                            </div>
+                        </a>
+                        <div class="modal fade" id="thru-da-lens" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalLongTitle">Thru-da-Lens (Photography)</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+                                    </br></br>
+                                    <p><strong>Integration 2023</strong> brings you this once in a lifetime opportunity to showcase your talent, leave alone the high chance to win prizes worth <strong>₹ 7,000</strong> and other exciting goodies. Submit your photographs as soon as possible.</p>
+                                        <p>One of the most coveted photography competitions of Eastern India. Both <strong>Niepce (B&W)</strong> and <strong>Daguerre (Colour)</strong> accepted. Those who want to participate, please mail us at <a href="mailto:photography.integration@gmail.com">photography.integration@gmail.com</a>. 
+                                        </br></br>Only the <strong>selected candidates</strong> of the first round have to pay a registration fee to compete in the <strong>finals</strong> and have their photos displayed in the <strong>Grand Exhibition</strong>.
+                                        </p>
+                                    </br></br>
+
+                                    <details>
+                  
+                                        <summary><h4><span class="caret"></span>Event Poster</h4></summary>
+                                    </br></br>
+
+
+                                    <div class="center">
+                                        <div class="thumbnails">
+                                            <a href="./img/posters/photog.jpg" target="_blank">
+                                                <img src="./img/posters/photog.jpg"  style="width: 35%" >
+                                            </a>
+                                        </div>
+                                        </div>
+                                        </details>
+                                    </br></br>
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Prize Pool: Rs. 7000</h4></summary>
+                                            
+                                        </br>   
+                                        For both <strong>B/W</strong> and <strong>Color</strong> Categories,
+                                            </br></br>
+                                            
+                                            <ol>
+                                                <li> <strong>Winner:</strong> Rs. 2000</li>
+                                                <li> <strong>Runners Up:</strong> Rs. 1000</li>
+                                            </ol></br>
+                                            <strong> Best Slo-Mo Video Winner:</strong> Rs. 1000
+                                            </details>
+                                        </br></br>
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Registration</h4></summary>
+                                            
+                                        </br></br>  
+                                        You can send us your photographs via the email <a href="mailto:photography.integration@gmail.com">photography.integration@gmail.com</a>. <strong>No fee is needed for initial submission</strong>. If your photograph or video gets selected, then you can register for the final event with <strong>Rs. 125</strong> per photo or <strong>Rs. 100</strong> per video. The details will be sent via email.
+                                        </details>
+                                    </br></br>
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Important Dates</h4></summary>
+                                            
+                                        </br></br>  
+                                        <ol>
+                                            <li><strong>Photo Submission Deadline:</strong> 10th January, 2023</li>
+                                            <li><strong>Announcement of Result (Prelims):</strong> 17th January, 2023</li>
+                                            <li><strong>Date of Registration of Candidates for the Final Round of Judging:</strong> 1st February, 2023</li>
+                                            <li><strong>Announcement of Result (Finals):</strong> 3rd February, 2023</li>
+                                            <li><strong>Exhibition:</strong> 4th, 5th February, 2023</li></br></ol>
+                                            <ol>
+
+                                            <li><strong>Video Submission Deadline:</strong> 15th January, 2023</li>
+                                            <li><strong>Announcement of Result (Prelims):</strong> 17th January, 2023</li>
+                                            <li><strong>Date of Registration of Candidates for the Final Round of Judging:</strong> 1st February, 2023</li>
+                                            <li><strong>Announcement of Result (Finals):</strong> 3rd February, 2023</li>
+                                            <li><strong>Exhibition:</strong> 4th, 5th February, 2023</li>
+                                            
+                                        </ol>
+                                        </details>
+                                    </br></br>
+                                        
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Rules & Regulations</h4></summary>
+                                            
+                                        </br></br> 
+                                       
+                                        <ol><h5><strong>Photography:</strong></h5></br>
+                                            <li>There would be two groups for this competition:
+                                                <ul>
+                                                    <li>The <strong>Black & White variant (Niepce)</strong></li>
+                                                    <li><strong>Color</strong> photographs (<strong>Daguerre</strong>)</li>
+                                                </ul>
+                                            </br>
+                                                There is <strong>no restriction</strong> on topics for the two variants and no editing other than cropping, color adjustment & brightness and contrast corrections, straightening and spot removal are allowed.
+                                            </li></br>
+                                            <li>Each participant can submit <strong>at most 3 (three)</strong> photographs (soft copy) per group, in <strong>JPEG/TIFF</strong> format, <strong>10" by 15" in size</strong>, resolution <strong>300 dpi</strong>. File size of a photograph should not exceed <strong>10 MB</strong>. Submit only formatted print ready photographs. Note that photos submitted in previous Thru-da-Lens competitions will <strong>not be considered</strong> for judging.</li></br>
+                                            <li>A <strong>caption/write-up</strong> in not more than 50 words, in MS word .doc format <strong>MUST BE ACCOMPANIED</strong> with each photograph, along with the submitter's name, email id, phone no., photograph legend, camera model, technical specifications, date, time & place of snap shot.</li></br>
+                                            <li>Watermarking is <strong>strictly prohibited</strong>. Computer generated images will not be accepted. Only images originating as camera taken will be considered. Image manipulations are not allowed except simple editing (those mentioned in Rule 1).</li></br>
+                                            <li>The photographs are to be mailed to <a href="mailto:photography.integration@gmail.com">photography.integration@gmail.com</a>. The last date for sending the photographs is <strong>10th January, 2023</strong>. </li></br>
+                                            <li>The <strong>best 100 entries</strong> from each group will be considered for final round of competition and the <strong>30</strong> among them will be displayed during <strong>4th-5th February, 2023</strong>. </li></br>
+                                            <li>The first round of judging will be done by <strong>16th January, 2023</strong>, after which qualifying participants can register. </li></br>
+                                            <li>The senders of the selected photographs will be notified through email and phone. The registration fee for the selected photographs will be <strong>Rs. 100/- each</strong> and must be done by <strong>1st February, 2023</strong>.</li></br>
+                                            <li>Only duly registered photographs will be considered for the final judgment.</li></br>
+                                            <li>The final judging and announcement of results will be done by <strong>3rd February 2023</strong> by a panel of Judges.</li>
+                                            
+                                        </ol></br></br>
+                                        <ol><h5><strong>Short Video:</strong></h5></br>
+                                            <li>
+                                                Short videos are to be mailed at <a href="mailto:photography.integration@gmail.com">photography.integration@gmail.com</a>. You may submit the videos by sharing a drive link with access. <strong>Note that once submitted, the video cannot be changed.</strong>
+                                            </li></br>
+                                            <li><strong>Top 50</strong> videos will be selected for judging.</li> The senders of the selected videos will be notifies through email and phone.</li></br>
+                                            <li>The registration fee for the selected videos will be <strong>Rs. 100</strong> each and registration must be done by <strong>1st February</strong>.</li></br>
+                                            <li>Only duly registered photographs will be considered for the final judgment.</li>
+                                            
+                                        </ol>
+                                        Participants have to accept and confirm that the photographs/videos belong to him/her. If the submitted items do not belong to the participant or any attempt is made to mislead the judges, the participant will be immediately disqualified. <strong>The organisers reserve the right to change any of the rules, timings and other details of the competition.</strong></br></details>
+
+                                    </br></br>
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Contact Us</h4></summary>
+                                            
+                                        </br></br>
+                                        <ul>
+                                            <li><strong>Email: </strong> <a href=mailto:photography.integration@gmail.com>photography.integration@gmail.com</a></li>
+                                            <li><strong>Rahul Debnath:</strong> 9863452547</li>
+                                            <li><strong>Rudrasish Bardhan:</strong> 7439281464</li>
+                                            <!--<li><strong>Srijan Chatterjee: </strong> 9163885964</li>
+                                            <li><strong>Drohan Chakraborty: </strong> 6291939639</li>-->
+                                        </ul>
+                                        </details></br></br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Thru-da-lens-->
+                    </div>
+                    </div>
+                     
+                </div> 
+                     
+                <hr>
+                <div class="card-deck pb-5 mt-5">  
+                    <div class="col-sm-6">
+                        <!--Shabdoshel-->
+                    <a type="button" class="card card-link" data-toggle="modal" data-target="#pen-fight">
+                        <img class="card-img-top" src="./img/culturalfest/Creative-writing.png" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Creative Writing</h5>
+                        <p class="card-text">Integration organises creative writing contest for all budding thinkers.</p>
+                            </div>
+                    </a>
+                    <div class="modal fade" id="pen-fight" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalLongTitle">Creative Writing</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+                                        <p><strong>"What is the most resilient parasite?"</strong></p>
+                                        <p><strong>"An idea. Resilient... highly contagious. Once an idea has taken hold of the brain it's almost impossible to eradicate."</strong></p></br>
+                                        <p>Have you ever envied a buzzard on its flamboyant flight with wings of freedom? Or the unsheathed sword with its unearthly swagger? Are your creative springs in dire need of being hearkened to, freed and uncovered?</p></br>
+                                        <p>Well, then this is where you belong. At <strong>Integration 2023</strong>, we offer the perfect opportunity for all you blue-sky enthusiasts to pen down your ideas and be rest assured that for once reality will take the backseat and imagination will occupy the forefront.</p></br>
+                                        
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Event Poster</h4></summary>
+                                        </br></br>
+
+
+                                        <div class="center">
+                                            <div class="thumbnails">
+                                                <a href="./img/posters/cw23.jpg" target="_blank">
+                                                    <img src="./img/posters/cw23.jpg"  style="width: 35%" >
+                                                </a>
+                                            </div>
+                                            </div>
+                                            </details>
+                                        </br></br>
+
+                                        <details>
+                                            
+                  
+                                            <summary><h4><span class="caret"></span>Prize Pool</h4></summary>
+                                        
+                                    </br>
+                                        </br>
+                                       
+                                        <ol>
+                                            <li><strong>Winner: </strong>Rs. 1100</li>
+                                            <li><strong>Runners Up: </strong>Rs. 550</li>
+                                            </ol>
+                                            </details>
+                                        </br></br>
+
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Date & Timings</h4></summary>
+                                        </br></br>
+                                            All submissions should be done before <strong>4th February, 2023</strong>
+                                            </details>
+                                        
+                                    </br>
+                                        </br>
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Registration</h4></summary>
+                                        </br></br>
+
+                                        
+
+                                        <h4><strong>Registration Fee: Rs. 50</strong> per submission</h4>
+                                        </br>
+                                         <div class="d-flex justify-content-center">
+                                            <button onclick="popup('integration-cw-23');" class="tsbutton">Register Now</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
+                                         </div>
+                                         </details>
+                                        </br></br>
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Rules and Regulations</h4></summary>
+                                        </br></br>
+
+                                        <ol>
+                                            <li>Only <strong>one</strong> submission will be accepted per registration.</li></br>
+                                            <li>The language of content should be <strong>English</strong>.</li></br>
+                                            <li>The participant will get to choose any one topic from a pool of topics.</li></br>
+                                            <li> Age limit of participants: <strong>15-21 years </strong>.</li></br>
+                
+                                            <li>Any form of plagiarism will not be accepted and the submission will be <strong>disqualified</strong>.</li></br>
+                                            <li>Minimum number of words must be <strong>250</strong> and maximum word limit is <strong>1000 words</strong>.</li></br>
+                                            <li>The document must be typed with font: <strong>Times New Roman</strong> and font size: <strong>14</strong>. The document must be submitted as a <strong>PDF File</strong>.</li></br>
+                                            <li>Submissions will not be accepted after <strong>4th February, 2023</strong>.</li>
+                                            
+                                            </ol>
+                                            </details>
+                                        </br></br>
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Contact Us</h4></summary>
+                                        </br></br>
+                                        <ul>
+                                            <li><strong>Email: </strong> <a href=mailto:creativewriting.integration@gmail.com>creativewriting.integration@gmail.com</a></li>
+                                            <li><strong>Anushka De:</strong> 8368598098</li>
+                                            <li><strong>Pulama Pal:</strong> 8276872003</li>
+                                        </ul>
+                                        </details></br></br>
+                                            
+                                    </div>
+                            </div>
+                    </div>
+                    </div>
+                    <!--Shabdoshel-->
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <!--Prahelika-->
+                            <a type="button" class="card card-link" data-toggle="modal" data-target="#quiz">
+                                <img class="card-img-top" src="./img/culturalfest/prahelika-quiz.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Prahelika (Quiz)</h5>
+                                <p class="card-text">Climb to the top with the power of knowledge!</p>
+                                    </div>
+                            </a>
+                            <div class="modal fade" id="quiz" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title" id="exampleModalLongTitle">Prahelika (Quiz)</h2>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                            <div class="modal-body">
+                                            </br></br>
+
+                                            <details>
+                  
+                                                <summary><h4><span class="caret"></span>Event Poster</h4></summary>
+                                            </br></br>
+
+
+                                            <div class="center">
+                                                <div class="thumbnails">
+                                                    <a href="./img/posters/alaap23.jpeg" target="_blank">
+                                                        <img src="./img/posters/alaap23.jpeg"  style="width: 35%" >
+                                                    </a>
+                                                </div>
+                                                </div>
+                                                </details>
+                                            </br></br>
+
+                                            <details>
+                  
+                                                <summary><h4><span class="caret"></span>Prize Pool: Rs. 12000</h4></summary>
+                                            </br></br>
+
+                                        <ol>
+                                            <li><strong>General Quiz: </strong>Rs. 8000</li>
+                                            <li><strong>Entertainment Quiz: </strong>Rs. 4000</li>
+                                            </ol>
+                                            
+                                        </br></br>
+
+                                        <h4><strong>General Quiz:</strong></h4>
+                                        </br>
+                                        With one of the most popular Quiz Masters in Kolkata, the General Quiz is back in this sesason of Integration. 
+                                        Get a chance to compete with the best minds of the city and win a lot of prizes! 
+                                    </details>
+                                </br></br>
+
+                                <details>
+                  
+                                    <summary><h4><span class="caret"></span>Date & Timings</h4></summary>
+                                </br></br>
+
+                                <ol>
+                                    <li><strong>Date:</strong> 4th February, 2023</li>
+                                    <li><strong>Time:</strong> 10 AM onwards</li>
+
+
+                                </ol>
+                                </details>
+                                                </br>
+                                               </br>
+
+                                <details>
+                  
+                                               <summary><h4><span class="caret"></span>Registration</h4></summary>
+                                           </br></br>
+
+                                         <div class="d-flex justify-content-center">
+                                            <button onclick="popup('integration-quiz-23');" class="tsbutton">Register Now</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
+                                         </div>
+                                        </br></br>
+                                        <ol>
+                                            <li><strong>School Students: </strong>One Quiz: Rs. 50, Both Quizzes: Rs. 75</li>
+                                            <li><strong>College Students: </strong>One Quiz: Rs. 150, Both Quizzes: Rs. 250</li>
+                                            <li><strong>Non School/College Participants: </strong>One Quiz: Rs. 200, Both Quizzes: Rs. 350</li>
+                                           </ol>   
+                                           </details>
+                                        </br></br>
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Rules and Regulations</h4></summary>
+                                        </br></br>
+
+                                        <ol>
+                                            <li>Carrying ID proof is must. Those who have registered as <i>school students</i> or <i>college students</i>, must carry their ID cards
+                                                issued by the respective schools and colleges for the academic year 2022-23.</li></br>
+                                            <li>Fees once paid is <strong>non-refundable</strong>.</li></br>
+                                            <li>Although same participant can participate in both the quizzes, the discounted fees for participation in both the quizzes will be applicable only if the participant registers for both the quizzes at same time.</li></br>
+                                            <li> Participants can participate in the quiz in team with <strong>maximum size of 3</strong>. A single participant can participate in 2 quizzes with different teammates. However, the details of the teams need to be given at time of registration. No change is allowed in teams once decided at the time of registration.</li></br>
+                                            <li>The decision of quiz master will be final in quiz related matters.</li></br>
+                                            <li>The organizers have the right to disqualify any participant if they find any on-stage comment or gesture illicit or inappropriate to the occasion.</li>
+                                        
+                                            </ol>
+                                            </details>
+                                        </br></br>
+
+                                    
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Contact Us</h4></summary>
+                                        </br></br>
+
+                                        <ul>
+                                            <li><strong>Email: </strong> <a href=mailto:quiz.isiintegration@gmail.com>quiz.isiintegration@gmail.com</a></li>
+                                            <li><strong>Vaibhav Sherkar:</strong> 9819962311</li>
+                                            <li><strong>Archishman Mukherjee:</strong> 9748826666</li>
+                                            <li><strong>Alaap Kumar Mukhopadhyay: </strong> 8961826499</li>
+                                    
+                                        </ul></details></br></br>
+                                                 </div>
+                                    </div>
+                            </div>
+                            </div>
+                        <!--Prahelika-->
+                    </div>
+                </div>
+                        
+                </div>
+            </div>
+    </main>
+
+
+    <!-- #################################################################### -->
+
+   <!--Footer-->
+   <footer class="page-footer font-small darkgrey">
+
+    <!-- Social buttons -->
+    <div class="danger-color">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 white-text">Our Valuable Sponsors</h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-7 text-center text-md-left" id = "footer-sponsor">
+                    </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+    </div>
+    <!-- Social buttons -->
+    </footer>
+    <!--Footer Links-->
+
+<!--Footer-->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+    <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+    <div class="row mt-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Integration 2023</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>The Annual Techno-Cultural-Sports festival of Indian Statistical Institute, Kolkata, here at 203, Barrackpore Trunk Road, Kolkata - 700108.</p>
+        </div>
+        <!--/.First column-->
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Events</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="#!">Chess</a>
+            </p>
+            <p>
+                <a href="#!">Quizzes</a>
+            </p>
+            <p>
+                <a href="#!">Band-E-Thlon</a>
+            </p>
+            <p>
+                <a href="#!">Alaap</a>
+            </p>
+        </div>
+        <!--/.Second column-->
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Useful links</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="http://www.isical.ac.in/~integration/mtrp/">MTRP</a>
+            </p>
+            <p>
+                <a href="#!">Hackathon</a>
+            </p>
+            <p>
+                <a href="#!">Showdowns Websites</a>
+            </p>
+            <p>
+                <a href="http://www.isical.ac.in">ISI homepage</a>
+            </p>
+        </div>
+        <!--/.Third column-->
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Contact</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <i class="fa fa-home mr-3"></i> Integration 2023</p>
+            <p>
+                <i class="fa fa-envelope mr-3"></i> integration.isikol@gmail.com</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 9163822172 (Soham Mallick)</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 9547901596 (Sounak Das)</p>
+        </div>
+        <!--/.Fourth column-->
+
+    </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2023 Copyright:
+        <a href="https://www.isical.ac.in/integration"> Integration.ISI</a>
+        <script type="text/javascript" src="http://counter2.fcs.ovh/private/counter.js?c=99dc7e2d3dfdbbcebc67fdffaf25f6a6"></script>
+        
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>

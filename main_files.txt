@@ -1,0 +1,8 @@
+/* CHANGE THE ABOVE FILES AS REQUIRED FOR THE DATABASE */
+
+config.php
+DAL/database.php
+admin/PartialViews/admin_head.php
+admin/Controllers/common_controller_header.php
+
+

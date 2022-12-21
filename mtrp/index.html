@@ -1,0 +1,1078 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MTRP | Integration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Subhrajyoty Roy">
+    <link rel="icon" href="./img/integration_logo_icon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/mtrpstyle.css"/>
+    <style>
+
+        
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.thumbnail {
+    background-color: black;
+    width: 250px;
+    height: 200px;
+    display: inline-block; /* makes it fit in like an <img> */
+    background-size: cover; /* or contain */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+        .block {
+            display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: left;}
+                    .block:click {
+  background-color: #ddd;
+  color: black;
+}
+
+.block2 {
+            display: block;
+                    border-radius: 6px;
+                    width: 60%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: center;}
+                    .block:click {
+  background-color: #ddd;
+  color: black;}
+
+  .block3 {
+            display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: center;}
+                    .block:click {
+  background-color: #ddd;
+  color: black;
+}
+
+
+  #outer
+{
+    width:100%;
+    text-align: left;
+}
+.inner
+{
+    display: inline-block;
+}
+
+                    details > summary {
+                        display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: left;
+}
+details>summary:hover{
+    background-color: #ddd;
+  color: black;
+}
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  width:100%;
+  margin: 3;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}  
+
+details2 > summary {
+                        display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: left;
+}
+
+
+.caret {
+    display: inline-block;
+    width: 10;
+    height: 10;
+    margin-left: 2px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border-top: 6px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;            
+}
+
+
+    </style>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $("body").css({
+                'overflow-x':'hidden',
+                'overflow-y':'auto',
+                'width':'100%',
+            });
+    
+            
+        });
+
+    </script>
+    
+</head>
+<body>
+        <header>
+                <!--Navbar-->
+                <nav class="navbar navbar-expand-lg unique-color-dark fixed-top">
+                    <div class="container">
+        
+                        <a class="navbar-brand" style="color:#fff" href="./index.html">
+                            <img src="./img/Integration_logo.png" height="30" class="d-inline-block align-top" alt="">
+                            Integration 2023
+                        </a>
+                            
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href=mailto:integration.isikol@gmail.com>
+                                        <i class="fa fa-envelope ml-5 gylphs"></i>
+                                    </a>
+                                </li>
+        
+                                <li class="nav-item">
+                                        <a href="https://www.facebook.com/integration.isi">
+                                            <i class="fa fa-facebook-official ml-5 gylphs"></i>
+                                        </a>
+                                </li>
+        
+                                <li>
+                                    <a href="https://www.twitter.com/integration_isi">
+                                        <i class="fa fa-twitter ml-5 gylphs"></i>
+                                    </a>
+                                </li>
+        
+                                    
+                            </ul>
+        
+                    </div>
+                </nav>
+                <!--/.Navbar-->
+        </header> 
+
+        <main>
+            <div class="container-fluid mt-5 mb-5">
+                <div class="jumbotron">
+                    <h1 class="diaplay-4"><p style="font-family:georgia"><p style="font-size:32px">Mathematics Talent Reward Programme (MTRP)</p></p></h1>
+                    <p class="lead">The perfect platform to show your mathematical potential and dive into the Mathematics beyond standard textbooks.</p>
+                    <div style="width: 60%">
+                    <p>Mathematics consists in proving the most obvious thing in the least obvious way.</p>
+                    <p style="text-align: right"> &mdash; <em>George Polya</em> </p>
+                </div></br>
+                    <p>
+                        <strong><b><h6>Disclaimer: </h6></b></strong> 
+<ul>
+<!--<li>Indian Statistical Institute does not have any role in
+organizing the examination. This is entirely organized by the students of the Indian Statistical Institute, Kolkata as
+a major part of their annual fest, Integration.</li>
+<li>MTRP is NOT, in any way, associated with any conduct of class for preparation of MTRP, wherever it might take place.</li>-->
+<li> This is an initiative of the students of the Indian Statistical Institute, Kolkata, as a part of their annual fest, Integration, to bolster the love for mathematics among all. </li>
+<li>Indian Statistical Institute itself <b>does not</b> conduct this event.</li>
+</ul>
+                      </p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active rounded" id="home-menu" data-toggle="list" href="#home" role="tab" aria-controls="home"><i class="fa fa-home mr-3"></i>Home</a>
+                            <a class="list-group-item list-group-item-action rounded" id="program-menu" data-toggle="list" href="#program" role="tab" aria-controls="program"><i class="fa fa-tasks mr-3"></i>Program Itinerary</a>
+                            <a class="list-group-item list-group-item-action rounded" id="application-menu" data-toggle="list" href="#application" role="tab" aria-controls="application"><i class="fa fa-folder-open mr-3"></i>Application</a>
+                            <a class="list-group-item list-group-item-action rounded" id="application-menu" data-toggle="list" href="#syllabus" role="tab" aria-controls="evaluation"><i class="fa fa-book mr-3"></i>Syllabus & Question Papers</a>
+                            <a class="list-group-item list-group-item-action rounded" id="rules-menu" data-toggle="list" href="#rules" role="tab" aria-controls="rules"><i class="fa fa-gavel mr-3"></i>Rules & Regulations</a>
+                            <a class="list-group-item list-group-item-action rounded" id="application-menu" data-toggle="list" href="#evaluation" role="tab" aria-controls="evaluation"><i class="fa fa-check mr-3"></i>Evaluation</a>
+                            <a class="list-group-item list-group-item-action rounded" id="application-menu" data-toggle="list" href="#prizes" role="tab" aria-controls="prizes"><i class="fa fa-trophy mr-3"></i>Prizes</a>
+                            <a class="list-group-item list-group-item-action rounded" id="past-menu" data-toggle="list" href="#past" role="tab" aria-controls="past"><i class="fa fa-history mr-3"></i>Past Events</a>
+                            <a class="list-group-item list-group-item-action rounded" id="contact-menu" data-toggle="list" href="#contact" role="tab" aria-controls="contact"><i class="fa fa-phone mr-3"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="tab-content" id="nav-tab-content">
+                            <div id="mobile-device"></div>
+                            <!--Home-->
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-menu">
+                                <p style="font-family:merriweather"><p style="font-size:32px">About MTRP</p></p>
+                                <p>
+                                    The students and research scholars of <a href="https://www.isical.ac.in" target="_blank">Indian Statistical Institute, Kolkata</a> as a part of its annual fest organize the <strong>Mathematics Talent Reward Programme (MTRP) </strong>in January every year, 
+                                    with the vision of increasing the <em>interest</em> and creating <em>awareness</em> about the subject among school students. One of the major aims of this programme is to identify and reward talent at a young age. This programme also offers the students an opportunity 
+                                    to assess themselves respective to their contemporaries throughout the nation, and brings an opportunity for them to interact with celebrated mathematicians and scientists.
+                                </p></br>
+                                <p>
+                                    The <strong>Mathematics Talent Reward Programme (MTRP)</strong> is the perfect platform for all students who are passionate for Mathematics. The pivotal purpose of this programme is to take mathematics beyond standard textbooks by inspiring innovative and
+                                     non-routine critical thinking among students and improving their conceptual understanding. The <strong>Winter Camp</strong>, gives an unparalled opportunity to every student to interact firsthand with great academicians and people who hold mathematics, perhaps the closest to their hearts. 
+                                     In the past, MTRP has attracted brilliant minds from all over West Bengal and beyond, who have faced the best mathematical challenges and emerged with flying colours.<br/>
+                                </p></br>
+                                
+				<!--<p> Our sole authorised Channel Partner is Eternita Consultancy Services.</p>-->
+				<span class="lead" style="font-weight: 500; color: blue">Date of Examination: </span><span class="lead" style="font-weight: 500; color: red">29th January, 2023 </span><br/>
+				<span class="lead" style="font-weight: 500; color: blue">The online application form for the year 2023 is available now. <u><a href="#application" style="color :red"> Apply Here.</a></u></span></br></br>
+                <!--<div class="center"> <button type="button" class="block2"><a href="./img/mtrp/poster23.jpg" target="_blank" class="block3"><h4>Apply Online</h4></a></button></br></br>-->
+                    <!--<button onclick="mtrp-2023-isik";" class="tsbutton">Apply Offline</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script></br></br>
+                    -->
+<!--<button type="button" class="block2"><a href="./img/mtrp/poster23.jpg" target="_blank" class="block3"><h4>Offline Exam</h4></a></button></div></br></br>
+<iframe id="ts-iframe" src="https://www.townscript.com/v2/widget/mtrp-2023-isik/booking" frameborder="0" height="600" width="80%"></iframe><link rel="stylesheet" href = "https://www.townscript.com/static/Bookingflow/css/ts-iframe.style.css" >-->
+
+
+
+<button onclick="location.href='https://www.townscript.com/v2/e/mtrp-2023-isik-online/booking/attendees';" class="block2" width="30%" data-inline="true"><h4>Online Exam</h4></button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script></br></br>
+<button onclick="location.href='https://www.townscript.com/v2/e/mtrp-2023-isik-offline/booking/attendees';" class="block2" data-inline="true"><h4>Offline Exam</h4></button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script></br></br>
+                
+                <span class='lead' style="font-weight:300; color:blue"><p> MTRP Problem Primer is available now!  </br> </br>
+                    
+                    <button onclick="location.href='https://www.townscript.com/v2/e/copy-of-mtrp-2023-isik-problem-primer/booking/attendees';" class="block2"><h4>Get the Primer!</h4></button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script></br></br>
+ 
+ 
+                    <!--<div id="outer">
+                        <div class="inner"><button class="block2" onClick="location.href='https://www.townscript.com/v2/e/mtrp-2023-isik-online/booking/attendees';" class="block" data-inline="true"><h5>Apply Online</h5></button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script></div>
+                        <div class="inner"><button class="block2" onClick="location.href='https://www.townscript.com/v2/e/mtrp-2023-isik-offline/booking/attendees';" class="block2" data-inline="true"><h4>Apply Offline</h4></button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script></div>
+                        
+                      </div>-->
+                    <!--<a href='go_to_payment.html' style="color :red">Click Here</a> to order it now.</br> After successful payment the hardcopy of the Problem Primer will be sent to your postal address.</p>
+				--><!--<br/>For candidates, who wish to attend the examination but haven't yet registered, we have opened the option of <b>ON-SPOT REGISTRATION</b> at the exam day and venue itself.</span><br/><br/> 
+<br/>-->
+                            </div>
+                            <!--Home-->
+                            <!--Program-->
+                            <div class="tab-pane fade" id="program" role="tabpanel" aria-labelledby="program-menu">
+                                <p style="font-family:merriweather"><p style="font-size:32px">Program Itinerary</p></p></br>
+                                <details>
+                                    <summary><h4><span class="caret"></span> Overview</h4></summary>
+                                    
+                                       
+                                </br> 
+                
+                                Like every year, the <strong>Mathematical Talent Reward Programme</strong> will have a qualifying examination (<strong>Level I</strong>), that will be held both <strong>online</strong> and <strong>offline</strong>. A student can sit for any mode according to their preference.
+                                    The selected students in <strong>Level I</strong>, will be invited to a 2-day <strong>Winter Camp</strong> at the <strong>Indian Statistical Institute, Kolkata</strong>. The camp will comprise of guest lectures from the faculty and research scholars of the Institute.
+                                    Quizzes will be held during the camp (<strong>Level II</strong>). The students who perform well overall will be felicitated with various awards. Besides this, prizes will  be there for all the selected candidates of Level I.
+                                    (see the Prizes Section for more details). 
+                                </details></br></br>
+                                <details>
+                                    <summary><h4><span class="caret"></span> Exam Pattern</h4></summary>
+                                    
+                                       
+                                </br> 
+                
+                                <strong>Level I</strong> shall consists of a qualifying exam comprising of two sections. <strong>Section A</strong> would consist of 10 Multiple Choice Questions (MCQs) and/or <strong> Integer Type Questions </strong>and <strong>Section B</strong> would consist of 6 Subjective Questions (single question paper).
+                                    The total duration of the exam (including both parts) shall be <strong>2 hours and 30 minutes</strong>. Evaluation shall be based on a <em>weighted sum</em> of the scores obtained in these two sections.
+                                    For <strong>Level II</strong>, there will be <strong>2 quizzes</strong>, one on each day of the camp. Each quiz will comprise of 5 questions. The total duration for each quiz shall be 45 minutes (see the Evaluation Section for details).</br></br>
+                                     The syllabus for both the exams consists of (but is not restricted to) well known topics in <strong>Number Theory</strong>, <strong>Combinatorics</strong>, <strong>Algebra</strong> and <strong>Geometry</strong>. The <strong>MTRP Problem Primer</strong> gives a thourough training in this regard
+                                     as to what the students might expect in MTRP as well as prepares them for other Olympiad examinations.
+                                </details></br></br>
+                                <details>
+                                    <summary><h4><span class="caret"></span> Mode of Examination</h4></summary>
+                                    
+                                       
+                                </br> 
+				
+                                This year, the examinations (Level I & Level II) are being conducted via both the <strong>Online</strong> and the <strong>Offline</strong> modes.
+                                A student can opt for <em>either</em> of these two modes. However, the offline mode will be held in West Bengal alone.
+                                The evaluations for both these modes will be done <em>separately</em> and <em>independently</em>
+                            (see the Evaluation and Rules & Regulations Section for details). 
+                            </details></br></br>
+
+                            <details>
+                                <summary><h4><span class="caret"></span> Categories</h4></summary>
+                                
+                                   
+                            </br> 
+                
+                            The examination will be conducted for two categories of students: 
+                            <li><strong>Junior Category:</strong>  Students in or below Class X (10) can apply.</li>
+                            <li><strong>Senior Category:</strong> Students in Class XI (11) or Class XII (12) can apply.</li></br></br>
+                            The top candidates in both the modes as well as both the categories will be rewarded (see the Prizes Section for details).
+                            </details></br></br>
+				<details>
+                            <summary><h4><span class="caret"></span> Date & Timings</h4></summary>
+                            
+                               
+                        </br> 
+                            
+                                The examination will be held on <strong>29th January, 2023 (Sunday)</strong> (tentative). 
+                                    <li><strong>Junior Category:</strong> 10:30 AM - 01:00 PM</li>
+                                    <li><strong>Senior Category:</strong> 02:30 PM - 05:00 PM</li></br></br>
+                                 The students in the offline mode, have to report at least 1 hour before the start of their respective examinations. Students in the online mode have to 
+                                    log in to the exam portal atleast 15 minutes before the start of the exam.
+                                 </details> 
+                                </br></br>
+                          <details>       
+                        <summary><h4><span class="caret"></span> Offline Mode</h4></summary>  
+                                </br>  
+                  
+                            The offline mode of the exam will be conducted across <em>several centres</em> in <strong>West Bengal</strong>. The <strong>Indian Statistical Institute, Kolkata</strong> will be one of the centres 
+                                in North Kolkata.
+                                It will be a pen and paper exam with physical invigilation. The students will have the option of choosing a region for their exam centre (<strong>North Kolkata</strong>, <strong>South Kolkata</strong> or <strong>Durgapur</strong>). The exact locations
+                                of the centres will be printed on the Admit Cards. On the day of the exam, the students must be in possession of the following items:
+                                <li> Copy of their <strong>Admit Card</strong></li>
+                                <li> Copy of a valid <strong>Identification Proof </strong>(e.g. Aadhar Card)</li>
+                            <li>Copy of their <strong>Payment Confirmation Ticket (PCT) </strong></li></br>
+                                For more information, visit the Rules & Regulations Section.
+                            </details></br></br>
+                            <details>
+                  
+                                <summary><h4><span class="caret"></span> Online Mode</h4></summary>
+                            
+                               
+                            </br> 
+               The online mode of the exam will be conducted through a <strong>web portal</strong> and will be <strong>proctored</strong>. The candidates will have to log in through this portal and will be admitted to the 
+                                online exam room after successful verification of their credentials. The candidates must have a <strong>working laptop</strong> or <strong>desktop</strong> and a <strong>working webcam</strong> which 
+                                they must keep on during the exam (see the Rules & Regulations Section).
+                            </details>
+                        </br></br>
+                            <details>
+                  
+                                <summary><h4><span class="caret"></span> Winter Camp</h4></summary>
+                            
+                            </br> 
+                 The top <strong>20 performers</strong> in the <strong>Offline</strong> mode and the top <strong>20 performers</strong> in the <strong>Online</strong> mode will be invited to the MTRP Winter Camp, to be held <!--on <strong>11th</strong> and <strong>12th--> in mid-February, 2023</strong> (tentative). 
+                                The students who have been selected in the <strong>Offline</strong> mode, can choose whether they want to attend the camp online or offline. However, the students who will be selected in the <strong>Online</strong> mode can only appear in the camp online. The entire lecture series will be streamed
+                                for benefit of both parties. All the invitees shall receive a <strong>Certificate of Merit</strong>  and a <strong> gift-hamper</strong> .</br></br>
+                                The camp shall include <em>guest lectures</em> from the faculty as well as research scholars and alumni 
+                                of ISI, on various topics in mathematics. This will be a unique experience for all the students to interact with the people who are perhaps the best in their fields. At the conclusion of each day's lectures, the students will be asked to appear for a <strong>short quiz</strong>. Based on the performance 
+                                in the quizzes (<strong>Level II</strong>) as well as the overall performance in <strong>Level I</strong>, the <strong>top 3</strong> students (in each mode) will be eligible for awards (see the Prizes Section for more details).
+                                
+                            </details>
+
+                                    <!--It will be conducted in two modes: online and offline. A student can opt for either of the two. 
+                                    Offline exam will be on pen and paper with physical invigilation. The online part will be through a portal 
+                                    and would be proctored. There will be two separate categories: <b>Junior Category</b> 
+                                    (Students upto 10th Standard) and <b>Senior Category</b> (Students from 11th and 12th Standards). 
+                                    Students from each category are selected for the MTRP camp based on their performance in the written test.  
+                                    A 2-day camp would be conducted for selected students, where Professors and scholars from our Institute, 
+                                    among others, would be requested to give talks or lectures on various topics. Only students who cleared the exam through 
+                                    
+                                    the offline mode, would have the choice of attending the camp offline or online according to their wish. 
+                                    The students who would have cleared the exam through the online mode, would only be allowed to attend the camp online.</p>
+                                    --><!--<ol>
+                                    <li>
+                                        <h4>Level I</h4>
+                                        <p>A written examination is held in various cities in India, specifically, Kolkata, Durgapur, Coochbehar, Bangalore and Warangal separately for classes IX and XI. The corresponding papers consist of two sections. Section I has multiple choice questions (MCQ) and Section II has subjective problems. The applicants are given two and a half hours to solve the paper. Based on their composite scores in the MCQ and subjective sections, students securing marks above a certain cut-off qualify for the MTRP Camp. The list of candidates selected in the written examination shall be uploaded in this webpage only.</p>
+                                    </li>
+                                    <li>
+                                        <h4>Level II</h4>
+                                        <p>The selected candidates are required to attend a two day camp. This camp features lectures from mathematicians, ISI faculties, renowned scholars from other universities, and other experts from various fields of Mathematics and Statistics. These lectures are based on interesting topics related to mathematics, thereby providing enthusiasts with lots of food for thought. Throughout the camp, quizzes are held periodically to judge the skills and problem-solving potential of the students. Based on their performance in the camp, the top few students are rewarded.</p>
+                                    </li>
+                                </ol>-->
+                        
+                            </div>
+                            <!--Program-->
+                            <!--Application-->
+                            <div class="tab-pane fade" id="application" role="tabpanel" aria-labelledby="application-menu">
+                                <p style="font-family:merriweather"><p style="font-size:32px">Application</p></p></br>
+                                <p style="font-family:merriweather"><p style="font-size:20px"><em>A unique opportunity to be a part of the renowned </em><strong>MTRP Winter Camp' 23</strong>. <em>A chance to learn from and interact with the brilliant minds at the </em><strong>Indian Statistical Institute</strong><em>. Win various awards and scholarships!</em></p></p></br>
+                                <p>
+                                    <span class="lead" style="font-weight: 500; color: blue">The application form for the year 2023 is available now. Register below! </span></br></br> <p style="font-family:merriweather"><p style="font-size:20px"><strong>Separate evaluations</strong> for both Modes! Offline candidates get to attend the Camp <strong>in-person</strong>!</br></br>Read the <strong>Rules & Regulations</strong> for more details...</p></br><!--<u><a href='mtrp_registration.html' style="color :red">Apply Here</a></u><br/>-->
+                                      <!--- <div class="center"> <button type="button" class="block2"><a href="./img/mtrp/poster23.jpg" target="_blank" class="block3"><h4>Apply Online</h4></a></button></br></br>
+                                        <button type="button" class="block2"><a href="./img/mtrp/poster23.jpg" target="_blank" class="block3"><h4>Apply Offline</h4></a></button></div></br></br>
+                                      -->
+                                      <button onclick="location.href='https://www.townscript.com/v2/e/mtrp-2023-isik-online/booking/attendees';" class="block2"><h4>Apply Online</h4></button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script></br></br>
+<button onclick="location.href='https://www.townscript.com/v2/e/mtrp-2023-isik-offline/booking/attendees';" class="block2"><h4>Apply Offline</h4></button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script></br></br>
+  
+                                      
+                                      
+                                      <span class="lead" style="font-weight: 500; color: blue">The last date of online application is </span><span class="lead" style="font-weight: 500; color: red">5th January, 2023</span><b></b>
+<br/><!--For candidates, who wish to attend the examination but haven't yet registered, we have opened the option of <b>ON-SPOT REGISTRATION</b> at the exam day and venue itself. </span>-->
+                                </p>
+				<!--<p> Candidates who have already registered and yet not completed their payment, follow <a href='go_to_payment.html'>this link</a> to complete the payment of examination with/without Problem Primer.</p>-->
+
+
+                
+                  <!--<button onclick="toggleClock()" id="clockButton">Show clock</button>-->
+                  
+
+            
+                            </br>
+                            <button type="button" class="block"><h4>MTRP 2023 Poster</h4></button>
+                            </br></br>
+                            <div class="center">
+                            <div class="thumbnail">
+                                <a href="./img/mtrp/poster23.png" target="_blank">
+                                    <img src="./img/mtrp/poster23.png"  style="width: 100%" >
+                                </a>
+                            </div>
+                            </div>
+                        </br></br></br></br></br></br></br></br>
+                  <details>
+                  
+                    <summary><h4><span class="caret"></span> MTRP 2023 General Guidelines</h4></summary>
+                
+                   
+                </br> 
+                <ul>
+                        <li>The qualifying examination will be held on <strong>29th January, 2023 (Sunday)</strong> (tentative).</li>
+                        <li>The registration fee is <strong>Rs. 250/- </strong> for both the categories, payable at the time of submission of the form.</li>
+                        <li> The <strong>MTRP Problem Primer</strong>, if bought independently costs <strong>Rs. 300</strong>. However if it is bought during the time of exam registration, then it costs only <strong>Rs. 200</strong> (<strong>33% discount</strong>). Hence the total payable cost would be <strong>Rs. 450 </strong>
+                            (<strong>Rs. 250</strong> for exam registration and only <strong>Rs. 200</strong> for the MTRP Problem Primer). For more details on the primer, please go down.</li>
+                        <li> Please read all the rules carefully in the Rules & Regulations Section.</li>
+                        <li>The offline forms, along with the entry fee will be collected from the <strong>Principal/ Headmaster/ Headmistress/Teacher-in-Charge</strong> of the respective school.</li>
+                        <li>The <strong>admit cards</strong> and <strong>sample questions</strong> for participants registering through offline forms, will be provided to their respective schools after receiving the filled up forms. The candidates registering online, would also receive the same on their registered email id.</li> 
+    </ul>
+                </details>
+
+            </br></br>
+            <details>
+                  
+                <summary><h4><span class="caret"></span> MTRP Problem Primer (Divide & Conquer)</h4></summary>
+            
+               
+             
+        </br></br>
+        <div class="center">
+        <div class="thumbnail">
+            <a href="./img/mtrp/cover_senior.jpeg" target="_blank">
+                <img src="./img/mtrp/cover_senior.jpeg"  style="width: 100%" >
+            </a>
+        </div>
+        </div>
+    </br></br></br></br></br></br></br></br></br>
+            
+                The students appearing in MTRP 2023 will get the unique opportunity to avail a limited edition <strong>MTRP Problem Primer (Divide & Conquer) </strong> published by <strong>Integration</strong>, Indian Statistical Institute against a fixed donation. Handcrafted by a team of <strong>RMO</strong> and <strong>INMO</strong> awardees and several students at the <strong>Indian Statistical Institute, Kolkata</strong> and <strong>Bangalore</strong> centres, the non-routine content of the book will help the talented students in learning mathematics through problem solving.
+                The book includes several topics on basic <strong>Analysis</strong>, <strong>Number Theory</strong>, <strong>Algebra</strong> and <strong>Combinatorics</strong> that will cater to the needs of today's Olympiad-adoring generation. The book is not only primarily useful for MTRP, but also other other problem-solving examinations.</br></br>
+            
+<span class='lead' style='font-weight:300; color:black;'><p> MTRP Problem Primer is available now!   </br></br><button onclick="location.href='https://www.townscript.com/v2/e/copy-of-mtrp-2023-isik-problem-primer/booking/attendees';" class="block2"><h4>Get the Primer!</h4></button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script></br></br>
+
+      <!--<a href='go_to_payment.html'>Click Here</a> to order it now.</br>--> After successful payment the hardcopy of the Problem Primer will be sent to your postal address.</p>
+</br><p> Take a sneak peak into the chapter of Number Theory and see what it entails... <a href="./assets/Sneak_Peak2.pdf" target="_blank">Click Here</a></p>
+<!--<p>The last date for ordering Problem Primer is 9th-Jan 2019.</p>-->
+
+</span>
+</details>
+</br></br>
+
+<details>
+                  
+    <summary><h4><span class="caret"></span> MTRP Results</h4></summary>
+
+   
+</br> 
+<h5>The MTRP 2023 Results will be updated here.</h5></br></br>
+<!--<h5>MTRP 2018 Results</h5>
+<ul>
+    <li><a href="./assets/pdf19/MTRP-RESULT-IX-2018.pdf" target="_blank">Class IX</a></li>
+    <li><a href="./assets/pdf19/MTRP-RESULT-XI-2018.pdf" target="_blank">Class XI</a></li>
+</ul>-->
+</details>
+            
+                <!--<strong>Disclaimer: </strong> 
+<ul>
+<li>Indian Statistical Institute does not have any role in
+organizing the examination. This is entirely organized by the students of the Indian Statistical Institute, Kolkata as
+a major part of their annual fest, Integration.</li>
+<li>MTRP is NOT, in any way, associated with any conduct of class for preparation of MTRP, wherever it might take place.</li>-->
+
+            
+            
+
+        </br></br></br>
+                                <!--<hr></br>
+                                <h3>MTRP Problem Primer (Divide & Conquer)</h3>
+                                <p>
+                                    The students appearing in MTRP 2023 will get the unique opportunity to avail a limited edition <strong>MTRP Problem Primer (Divide & Conquer) </strong> published by <strong>Integration</strong>, Indian Statistical Institute against a fixed donation. The non-routine content of the book will help the talented students in learning mathematics through problem solving.
+                                </p>
+			<span class='lead' style='font-weight:300; color=black;'><p> MTRP Problem Primer is available now!   <a href='go_to_payment.html'>Click Here</a> to order it now.</br> After successful payment the hardcopy of the Problem Primer will be sent to your postal address.</p>
+				<!--<p>The last date for ordering Problem Primer is 9th-Jan 2019.</p>
+
+</span>
+                                <p>
+                                    <!--<strong>Disclaimer: </strong> 
+<ul>
+<li>Indian Statistical Institute does not have any role in
+ organizing the examination. This is entirely organized by the students of the Indian Statistical Institute, Kolkata as
+a major part of their annual fest, Integration.</li>
+<li>MTRP is NOT, in any way, associated with any conduct of class for preparation of MTRP, wherever it might take place.</li>-->
+</div>
+<div class="tab-pane fade" id="syllabus" role="tabpanel" aria-labelledby="syllabus-menu">
+    <p style="font-family:merriweather"><p style="font-size:32px">Syllabus & Question Papers</p></p></br>
+                                </p>
+                                <hr>
+                                <button type="button" class="block"><h4>MTRP 2023 Syllabus</h4></button></br></br>
+                                <ul>
+                                    <li><a href="./assets/Syllabus - Junior.pdf" target="_blank"><h5>Syllabus for <strong>Junior Category </strong></h5></a></li>
+                                    <li><a href="./assets/Syllabus - Senior.pdf" target="_blank"><h5>Syllabus for <strong>Senior Category </strong></h5></a></li>
+                                </ul>
+                                <hr></br>
+                                <button type="button" class="block"><h4>Previous Year's Question Papers and Solutions</h4></button></br></br>
+                                <h4>Questions</h4>
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <h5>Junior Category</h5>
+                                        <a href="./assets/pdf16/2015_9.pdf" target="_blank">2015</a>
+                                        <a href="./assets/pdf17/2016_9.pdf" target="_blank">2016</a>
+                                        <a href="./assets/pdf18/2017_9.pdf" target="_blank">2017</a>
+                                        <a href="./assets/pdf19/2018_9.pdf" target="_blank">2018</a>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <h5>Senior Category</h5>
+                                        <a href="./assets/pdf16/2015_11.pdf" target="_blank">2015</a>
+                                        <a href="./assets/pdf17/2016_11.pdf" target="_blank">2016</a>
+                                        <a href="./assets/pdf18/2017_11.pdf" target="_blank">2017</a>
+                                        <a href="./assets/pdf19/2018_11.pdf" target="_blank">2018</a> 
+                                    </div>
+                                     
+                                </div>
+                                <h4>Solutions</h4>
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <h5>Junior Category</h5>
+                                        <a href="./assets/pdf16/2015_9_sol.pdf" target="_blank">2015</a>
+                                        <a href="./assets/pdf17/2016_9_sol.pdf" target="_blank">2016</a>
+                                        <a href="./assets/pdf18/2017_9_sol.pdf" target="_blank">2017</a>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <h5>Senior Category</h5>
+                                        <a href="./assets/pdf16/2015_11_sol.pdf" target="_blank">2015</a>
+                                        <a href="./assets/pdf17/2016_11_sol.pdf" target="_blank">2016</a>
+                                        <a href="./assets/pdf18/2017_11_sol.pdf" target="_blank">2017</a>
+                                        </ul>             
+                                    </div>
+                                </div>     
+                                </div>
+
+                                
+                            <!--Application-->
+                            <!--Past-->
+
+    <div class="tab-pane fade" id="rules" role="tabpanel" aria-labelledby="rules-menu">
+        <p style="font-family:merriweather"><p style="font-size:32px">Rules & Regulations</p></p></br>
+        
+                  
+               <details>
+                  
+                    <summary><h4><span class="caret"></span> Date</h4></summary>                  
+                </br> The <strong>Level I</strong> qualifying examination will be held on <strong>29th January, 2023 (Sunday)</strong> (tentative). <strong>Level II</strong> quizzes for selected candidates
+                will be held during the <strong>Winter Camp</strong> in <!-- <strong>11th</strong> and <strong>12th--> mid-February</strong> (tentative).
+            </details>
+            
+        </br></br>
+        
+            <details>
+            <summary><h4><span class="caret"></span> Timings</h4></summary>                  
+                </br> <h6>Exam Timings:</h6>
+                <ul>
+                <li><strong>Junior Category:</strong> 10:30 AM - 01:00 PM</li>
+                <li><strong>Senior Category:</strong> 02:30 PM - 05:00 PM</li></ul>
+
+            </br> <h6>Reporting Timings:</h6>
+            The students in the offline mode, have to report at least <strong>1 hour before</strong> the start of their respective examinations. Students in the online mode have to 
+            log in to the exam portal atleast <strong>15 minutes before</strong> the start of the exam.</br></br>
+            <div class="row">
+                <div class="col-6 text-left">
+                    <strong>Offline Mode:</strong>
+                <ul>
+                <li><strong>Junior Category:</strong> 09:30 AM </li>
+                <li><strong>Senior Category:</strong> 01:30 PM </li></ul></br>
+                </div>
+                <div class="col-6 text-left">
+                    <strong>Online Mode:</strong>
+                <ul>
+                <li><strong>Junior Category:</strong> Login by 10:15 AM </li>
+                <li><strong>Senior Category:</strong> Login by 02:15 PM </li></br></ul>
+                
+                </div>
+                 
+            </div>
+            <strong>No student will be allowed in the exam hall after 10 minutes of start of the examination.</strong>
+            </details>
+
+        </br></br>
+
+        <details>
+            <summary><h4><span class="caret"></span> Junior & Senior Category</h4></summary>                  
+                </br>
+                <ul><li>
+                    Only students studying <strong>in or below</strong> Standard X (10) can apply for the <strong>Junior Category</strong>. No student born before <strong>29th January, 2005</strong> can apply. The syllabus for the <strong>Junior Category</strong> has been specifically designed to cater to students studying in classes 8 through 10.
+                    However, students from classes 6 and 7 are also encouraged to sit for the exam.</li></br>
+                    <li>Only students studying <strong>in</strong> Standard XI (11) or Standard XII (12)  can apply for the <strong>Senior Category</strong>. No student born before <strong>29th January, 2003</strong> can apply.</li></br>
+                    <li>
+                    The student will have to produce a valid ID before the start of the exam, which contains information regarding their <strong>date of birth</strong>.
+                    Failure to produce such an ID or producal of an incorrect or falsified ID or an ID which does not match the information in the registered form, would result in immediate cancellation of the exam for that student. For eligibility in the online mode please see the <strong>Special Instructions</strong> section below.
+                </li>
+                </ul>
+            </details>
+        </br></br>
+<details>
+            <summary><h4><span class="caret"></span> Registration & Problem Primer</h4></summary>                  
+                </br>
+                <ul><li>The registration fees for the <strong>Level I</strong> qualifying examination will be <strong>Rs. 250/- </strong> for both the categories, payable at the time of submission of the form.
+                <strong>No extra charge</strong> will be there for the <strong>Level II</strong> quizzes for the selected candidates.</li></br>
+                <li>The <strong>MTRP Problem Primer (Divide & Conquer)</strong> costs <strong>Rs. 300</strong>. However, if bought along with exam registration, there will be a <strong>33%</strong> discount, thus making its effective price <strong>Rs. 200</strong>. 
+                However, the student has to pay this price (for registration (Rs. 250) and Primer (Rs. 200)) at the time of registration. This is a limited time deal and will stay active till <strong>5th January, 2023</strong>.</li>.</br>
+                <li>A <strong>Payment Confirmation Ticket (PCT)</strong> will be displayed on the screen after successful completion of payment. Kindly download it and bring a copy on the day of the exam. Allowance into the exam centre is subject to verification of the <strong>PCT</strong>. 
+                    The <strong>Admit Cards</strong> will be sent to the registered Email IDs, atleast a week before the exam. Kindly download it, to know your exam centre. A copy of it will also be needed to be produced during the exam. For online candidates, a web portal will be made which they can access using 
+                their registered email IDs. The online exam shall be conducted through that portal (for more details go to <strong>Special Instructions</strong> below).</li></br>
+                <li> The registration fees is <strong>non-negotiable</strong>.  Make sure your details are correct when you are registering. 
+                    However, if there is an incorrect registration, illegitimate information, falsified information or fault while registration, under no circumstances shall the registration fees be refunded. 
+                If a payment has been made on your end and we have not received the same, do intimate us with sufficient proof. <strong>We will try our best to resolve the issue</strong>.</li></br>
+                <li> <strong>No part</strong> of the MTRP Primer is allowed for resale, copy or distribution in any form whatsoever. Failure to abide by this rule shall warrant immediate legal action from our end.</li>.
+                <li><strong>No cancellaton</strong> of registration is allowed in any case once you pay the fees for MTRP 2023. If the amount gets deducted from your account but you do not receive any confirmation or registration successful message or email 
+                    then you should wait for 2-3 working days before registering and making the payment again. Even if it exceeds the registration deadline, avoid making multiple payments. In case you make multiple registrations and payments, then you 
+                    will be held responsible for the same and any payment will not be refunded under normal circumstances. Under <strong>extra-ordinary situations</strong>, submission of adequate proof and the discretion of the MTRP Team, we will try our best to resolve conflicts, if possible.</li>
+            </ul>
+                
+            </details>
+        
+        </br></br>
+
+        <details>
+            <summary><h4><span class="caret"></span> Winter Camp</h4></summary>                  
+                </br> A total of 20 students from each category and each mode (thus, a total of 80) will be selected for the Winter Camp. The selected students will only be allowed into the camp subject to verification of the information they have provided at the time of registration. If any inconsistency is found, they will be <strong>immediately disqualified</strong> from the camp as well as any other prizes. Decorum
+                must be maintained in the camp. Anyone found not adhering to the <strong>disciplinary norms</strong> of the Institution will be subject to similar disqualification.
+                </details>
+            </br></br>
+        
+         <details>
+                        <summary><h4><span class="caret"></span> Special Instructions (Offline Candidates)</h4></summary>                  
+                            </br>
+                            <ul>
+                                <li>The offline exam centres will only be in <strong>West Bengal</strong>. All candidates must provide for their own transportation. If you are an outstationed candidate, then it is feasible for you to attempt the exam online.
+
+                                </li></br>
+                               All the students are requested to adhere to the schedule mentioned in the <strong>Timings</strong> section above.  On the day of the exam, students. Note that <strong> no guardian </strong>will be allowed into the exam hall.</li></br>
+                            <li>The students will be asked to produce the following documents:
+                                <ol>
+                                <li> Copy of their <strong>Admit Card</strong></li>
+                                <li> Copy of a valid <strong>Identification Proof </strong>(e.g. Aadhar Card), containing their <strong>Date of Birth</strong></li>
+                                <li> Copy of their <strong>Payment Confirmation Ticket (PCT) </strong></li>
+                            </ol>
+                            </li></br>
+                            <li>It is a closed book exam. <strong>No calculators or any other electronic devices</strong> are allowed. The student can carry their stationary items in a transparent pouch.
+                                Failure to abide by any of these rules or if caught using unfair means, will result in immediate cancellation of the examination.
+                            </li></br>
+                            <li>No student will be allowed to leave the exam hall within one and half hours of the commencement of the exam, except during an <strong>emergency situation</strong>, to be decided at the discretion of
+                                the Invigilators. If allowed, the student will not be allowed to take their question paper.</li>
+                            </ul>
+                        </details>
+                    </br></br>
+                    <details>
+
+                        <summary><h4><span class="caret"></span> Special Instructions (Online Candidates)</h4></summary>                  
+                            </br>
+                            <ul>
+                                <li> A student can apply for the <strong>Online</strong> mode only if they are in posession of a <strong>working desktop</strong> or a <strong>laptop</strong> and a <strong>working webcam</strong>.
+                                A stable internet is necessary as the webcam must be kept on <strong>at all times</strong> during the exam. A student will <strong> not be allowed </strong> to appear for the exam on a mobile device. The exam will be <strong>proctored</strong> using a software and <strong>2 minutes</strong> of absence within the 
+                                focus of the webcam will result in automatic submission of the answers, unless due to a <strong>valid reason</strong> provided to the invigilator.
+                                <li></br>
+                               All the students are requested to adhere to the schedule mentioned in the <strong>Timings</strong> section above.  On the day of the exam, students will have to log in through the exam portal, using their registered email ID. The portal 
+                            will be launched some time in end-December. </li></br>
+                            <li>The students will be asked to produce the following documents:
+                                <ol>
+                                <li> Copy of their <strong>Admit Card</strong></li>
+                                <li> Copy of a valid <strong>Identification Proof </strong>(e.g. Aadhar Card), containing their <strong>Date of Birth</strong></li>
+                                <li> Copy of their <strong>Payment Confirmation Ticket (PCT) </strong></li></br>
+                            </ol>
+                            An extra <strong>5 minutes</strong> will be provided <strong>at the end of the exam</strong> to scan and submit the solutions for the <strong>Subjective Section (Section B)</strong>. During these 5 minutes, the students will be allowed to use their mobile device. 
+                            However, if the student submits the paper after <strong>x minutes</strong> of this scheduled time, then a penalty of <strong>2x marks</strong> will be charged from their answer sheet. If a student takes more than 10 minutes, after the scheduled time, then no submission will be entertained.
+                            </li></br>
+                            <li>It is a closed book exam. <strong>No calculators or any other electronic devices</strong> are allowed. A mobile device can only be allowed to scan the answers <strong>after the exam gets over</strong>, on the permission of the Invigilator.
+                                Failure to abide by any of these rules or if caught using unfair means, will result in immediate cancellation of the examination.
+                            </li></br>
+                            <li>No student will be allowed to leave the exam room within one and half hours of the commencement of the exam, except during an <strong>emergency situation</strong>, to be decided at the discretion of
+                                the Invigilators. In case of an unstable internet, <strong>only once</strong> will a student be allowed to re-enter the portal, provided they re-join within <strong>2 minutes</strong> of their disconnection</li></br>
+                            <li> The students selected through the online mode will be asked to attend the camp <strong>online</strong>. The same lectures will be streamed for them from the campus through a video conferencing platform. </li>
+                            </ul>
+                        </details>
+
+    </div>
+
+
+
+
+                            <div class="tab-pane fade" id="evaluation" role="tabpanel" aria-labelledby="evaluation-menu">
+                                <p style="font-family:merriweather"><p style="font-size:32px">Evaluation</p></p></br>
+                                <details>
+                  
+                                    <summary><h4><span class="caret"></span> Level I</h4></summary>                  
+                                </br> <ul>
+                                    <li>There will be <strong>two</strong> sections in the qualifying paper: <strong>Section A</strong> (Objective) and <strong>Section B</strong> (Subjective).</li></br>
+                                    <li><strong>Section A</strong> will comprise of <strong>10</strong> questions,
+                                    some (or all) of which will be <strong>Multiple Choice Questions (MCQs)</strong> and some (or all) will be <strong>Integer Type Questions</strong>. Of these, <strong>three (3) points</strong> will be awarded for <strong>each correct answer</strong> and
+                                    <strong>one (1) point</strong> will be deducted for <strong>each incorrect answer</strong>. No points will be awarded or deducted for any question left unanswered. The maximum, that a student can score
+                                    in the Objective section is <strong>30 points</strong>. </li></br>
+                                    <li><strong>Section B</strong> will comprise of <strong>6</strong> subjective questions worth <strong>10 points</strong> each. Candidates will have
+                                    to provide a detailed solution to each problem. A solution that is deemed complete by the grader will fetch the contestant full credit. Partial credit will be given in case of an incomplete attempt at a solution depending on the progress made in solving the problem. 
+                                    There will be <strong>no negative marking</strong> in this section. <strong> Innovative solutions</strong> will be rewarded with up to <strong>2 bonus points</strong> for the corresponding problem. The maximum that a student can score in the Subjective section is <strong>72 points</strong>.</li></br>
+                                    <li>In order for the Subjective section to be evaluated, the students <strong>must score</strong> above a certain cut-off (to be determined) in the Objective section.</li></br>
+                                    <li>The evaluation for the two modes will be done <strong>separately</strong> and <strong>independently</strong> of each other. This means that a student appearing in the <strong>Offline</strong> mode will only compete with other students in the <strong>Offline</strong> mode. Same holds for the students in the <strong>Online</strong> mode.
+                                        This has been done to ensure that the students in the offline mode <em>are given a fair chance</em> to the camp.
+                                    Since the evaluations are different, the cut-offs will also be different for the two modes of examination. Eventually, <strong>20 students</strong> from the <strong>Offline</strong> mode and <strong>20 students</strong> from the <strong>Online</strong> mode from <strong>each category</strong> will be invited to the <strong>Winter Camp</strong>.</li></br>
+                                    <li>Participants are encouraged to submit all rough work as they may lead to the student getting partial credit for the concerned problem(s).
+                                 There will also be a prize in the camp for the <strong>Most Creative Solution</strong>, to be determined by the examiners (see the Prizes Section for more details).</li></br>
+                                    <li>The final score of a candidate will be the total sum of the Objective and Subjective scores (subject to scoring above the Objective cut-off) and it is based on these composite scores, that the list of candidates selected for the camp in <strong>each category</strong> and 
+                                        <strong>each mode</strong>, will be released. Thus, the maximum score a candidate can obtain is <strong>102 points</strong>.</li></br>
+                                    <li>Candidates are encouraged to answer the examination honestly. Suitable techniques will be employed for detection of cheating. If one
+                                        or more students are found guilty of cheating, it will lead to <strong>immediate disqualification</strong> of their candidature.
+                                     Utmost care shall be taken while grading the answer scripts. Candidates are requested to respect the subjective judgment of the grader(s) regarding creative solutions. <strong>No re-evaluation</strong> requests shall be entertained.</li></ul>
+    
+                            </details>
+                            
+                        </br></br>
+                        
+                            <details>
+                            <summary><h4><span class="caret"></span> Level II</h4></summary>                  
+                                </br> 
+                                <ul>
+                                <li>The selected students for the <strong>Winter Camp</strong> will be asked to appear for <strong>2 short quizzes</strong> at the end of each day's lectures. Each quiz shall consist of <strong>5 Integer Type Questions</strong>, with a duration of <strong>45 minutes</strong>.
+                                    Each question shall carry <strong>5 points</strong> and there will be <strong>no negative marking</strong>.</li></br>
+                                <li>Based on the performance in these quizzes as well as the overall performance in <strong>Level I</strong>, the <strong>top 3</strong> candidates in ach mode and each category, will be awarded prizes (see the Prizes Section for more details).</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="prizes" role="tabpanel" aria-labelledby="prizes-menu">
+                                <p style="font-family:merriweather"><p style="font-size:32px">Prizes</p></p></br>
+                                <p style="font-family:merriweather"><p style="font-size:20px"><strong>Prizes worth Rs. 20k</strong><em> to be won!! From creative solutions to overall performance, there is a prize for everything!! Click on each Level to know more.</em>
+                                </p></p></br> 
+                                <details>
+                  
+                                    <summary><h4><span class="caret"></span> Level I</h4></summary>                  
+                                </br> <ul>
+                                    <li>Based on the performance in the qualifying exam, the <strong>top 20</strong> students from each category (<strong>Category I</strong> and <strong>Category II</strong>) and each mode (<strong>Online</strong> and <strong>Offline</strong>), will be selected for the 
+                                    <strong>Winter Camp' 23</strong> to be held at the <strong>Indian Statistical Institute, Kolkata</strong> in<!-- <strong>11th</strong> and <strong>12th--> mid-February, 2023</strong> (tentatively). Thus, a total of <strong>80 students</strong> will be selected for the camp. The camp serves 
+                                    as a great platform, providing an unparalleled opportunity to budding juniors to meet and interact with the <strong>faculty, research scholars and students at ISI, Kolkata</strong>. They get to learn their favourite topics over a <strong>series of lectures</strong> taken by eminent academicians in their field.
+                                At the end, each student receives a <strong>Certificate of Merit</strong> and a <strong>gift-hamper</strong>, awarded by respected dignitaries, for their achievment in such a huge competition.</li></br>
+                                    <li>A special cash prize of <strong>Rs. 1000</strong> will be reserved for the <strong>Most Creative Solution</strong> in both the categories for the Subjective Paper of <strong>Level I</strong>. This would encourage students to think out of the box and do a lot of brainstorming in search of the most beautiful path to the solution</li></br>
+                                    <li>To ensure fairness towards the students appearing in the <strong>Offline</strong> mode, they will only compete with other students in the <strong>Offline</strong> mode. Also, only the candidates selected via the offline mode will be given the <strong>choice</strong> of either attending the camp <strong>offline or online</strong>. No such choice will be given to the online students. They can only attend the camp <strong>online</strong>. 
+                                    However, to ensure that even the students competeing in the online mode <em>are not slighted</em>, they will have access to the <strong>same</strong> lectures and interaction as their offline counterparts.</li></br>
+                                    <li>All the invitees to the camp are automatically <strong>invited to our fest</strong> and all events in it, including our famous <strong>Showdowns</strong>.</li>
+                                    
+                            </details>
+                            
+                        </br></br>
+                        
+                            <details>
+                            <summary><h4><span class="caret"></span> Level II</h4></summary>                  
+                                </br> 
+                                <ul>
+                                <li>Based on the overall performance in <strong>Level I & II</strong>, the candidate who comes <strong>first</strong>, will be awarded the following prizes:
+                                    <ul><li>A one-time cash prize of <strong>Rs. 2000</strong></li>
+                                    <li>A <strong>Certificate of Merit</strong> and a <strong>Medal of Distinction</strong></li>
+                                <li>A special <strong>Gift-Hamper</strong> from our sponsors.</li></ul> </li></br>
+                                <li>The <strong>second</strong> and <strong>third</strong> place holder will receive <ul>
+                                    <li>A <strong>Certificate of Merit</strong> and a <strong>Medal of Distinction</strong></li>
+                                <li>A special <strong>Gift-Hamper</strong> from our sponsors.</li></ul> </li></br>
+                                <li> The <strong>top 3</strong> contestants will receieve a Limited Edition <strong>Integration, 2023</strong> T-Shirt</li>.</br>
+                                <li><strong>The above prizes are for each category and each mode</strong>.</li>
+                                
+                                </ul>
+</details>
+                            </div>
+                            
+
+                            <div class="tab-pane fade" id="past" role="tabpanel" aria-labelledby="past-menu">
+                                <button type="button" class="block"><h4>Past Speakers in the Camp</h4></button></br></br>
+
+
+                                <!--<div id="gallery2">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="thumbnail" style="background-image: url(./img/mtrp/gallery/prof1.jpg);"></div><div class="thumbnail">
+                                                <a href="./img/mtrp/gallery/prof1.jpg" target="_blank">
+                                                    <img src="./img/mtrp/gallery/prof1.jpg" style="width: 100%" class="rounded">
+                                                    
+                                                </a></br>
+                                                <p>&nbsp;&nbsp;&nbsp;Prof. Bimal Kumar Roy </br><strong>&nbsp;&nbsp;&nbsp;&nbsp;Former Director, ISI</strong>.</p>
+                                            </div>
+                                            <div class="thumbnail">
+                                                <a href="./img/mtrp/gallery/prof1.jpg" target="_blank">
+                                                    <img src="./img/mtrp/gallery/prof2.jpg" style="width: 100%" class="rounded">
+                                                    
+                                                </a></br>
+                                                <p>&nbsp;&nbsp;&nbsp;Prof. Bimal Kumar Roy </br><strong>&nbsp;&nbsp;&nbsp;&nbsp;Former Director, ISI</strong>.</p>
+                                            </div>
+                                        </div>-->
+                                <ul>
+                                    <li> Prof. Pradipta Bandapadhyay (Former Dean of Studies, Indian Statistical Institute).</li>
+                                    <li> Prof. Bimal Kumar Roy (Former Director, Indian Statistical Instutute).</li>
+                                    <li> Prof. Arijit Bishnu (Advanced Computing and Microelectronics Unit, Indian Statistical Institute). </li>
+                                    <li> Prof. Alok Goswami (Stat-Math Unit, Indian Statistical Institute). </li>
+                                    <li> Prof. Arnab Chakraborty (Applied Statistics Unit, Indian Statistical Institute). </li>
+                                    <li> Prof. Gopal Krishna Basak (Statistics and Mathematics Unit, Indian Statistical Institute). </li>
+                                    <li> Prof. Ritabrata Munshi (Statistics and Mathematics Unit, Indian Statistical Institute). </li>
+                                    <li> Prof. Saurabh Ghosh (Human Genetics Unit, Indian Statistical Institute). </li>
+                                    <li> Prof. Souvik Roy (Economics Research Unit Unit, Indian Statistical Institute). </li>
+                                    <li> Prof. Sandip Das (Advanced Computing & Microelectronics Unit, Indian Statistical Institute). </li>
+                                </ul>
+                                <hr></br>
+                                <button type="button" class="block"><h4>MTRP Hall of Fame</h4></button></br></br>
+                                <div id="gallery">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="thumbnail">
+                                                <a href="./img/mtrp/gallery/pic1.jpg" target="_blank">
+                                                    <img src="./img/mtrp/gallery/pic1.jpg" style="width: 100%" class="rounded">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                                <div class="thumbnail">
+                                                    <a href="./img/mtrp/gallery/pic2.jpg" target="_blank">
+                                                        <img src="./img/mtrp/gallery/pic2.jpg" style="width: 100%" class="rounded">
+                                                    </a>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="thumbnail">
+                                                <a href="./img/mtrp/gallery/1.jpg" target="_blank">
+                                                    <img src="./img/mtrp/gallery/1.jpg" style="width: 100%" class="rounded">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <!--Past-->
+                            <!--Contact-->
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-menu">
+                                <button type="button" class="block"><h5>Email</h5></button></br>
+                                You can reach out to us the fastest using these email addresses.</br>
+                                <ul>
+                                    <li><a href=mailto:mtrp.isi.kol@gmail.com><strong>mtrp.isi.kol@gmail.com</strong></a></li>
+                                    <li><a href=mailto:integration.isikol@gmail.com><strong>integration.isikol@gmail.com</strong></a></li>
+                                </ul></br>
+                                <button type="button" class="block"><h5>Contact our Representatives</h5></button></br>
+You can also contact our Team Members for any queries or problems.</br></br>
+                                <div class="row">
+                                    <div class="col-3 text-left">
+                                        <h4>Names</h4>
+                                        <strong>Mr. Ishan Paul</strong></br>
+                                        <strong>Mr. Saikat Sengupta</strong></br>
+                                        <strong>Mr. Shubhayan Pan</strong></br>
+                                    </div>
+
+                                    <div class="col-4 text-center">
+                                        <h4>Contact No.</h4>
+                                        <strong>7980136941</strong></br>
+                                        <strong>7811956054</strong></br>
+                                        <strong>9874230235</strong></br>
+                                    </div>
+
+                                    <div class="col-4 text-left">
+                                        <h4>Email ID:</h4>
+                                        <a href=mailto:ishan.paul.kol@gmail.com><strong>ishan.paul.kol@gmail.com</strong></a></br>
+                                        <a href=mailto:senguptasaikat97@gmail.com><strong>senguptasaikat97@gmail.com</strong></a></br>
+                                        <a href=mailto:shubhayanpan@gmail.com><strong>shubhayanpan@gmail.com</strong></a></br>
+                                    </div>
+                                    </div>
+                                <!--<ol>
+                                    <li><strong>Mr. Jyotishka Ray Choudhury:</strong> +919073003155 (jyotishka.stat@gmail.com)</li>
+                                    <li><strong>Mr. Supratik Basu:</strong> +919073452695 (supratikbasu18@gmail.com)</li>
+				    <li><strong>Mr. Chandramauli Chakraborty:</strong> +919330389412 (chandramaulichak108@gmail.com)</li>
+                                </ol>-->
+                            </div>
+                            <!--Contact-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+
+    <!-- #################################################################### -->
+
+   <!--Footer-->
+   <footer class="page-footer font-small darkgrey">
+
+    <!-- Social buttons -->
+    <div class="warning-color">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h5 class="mb-0 white-text">Our Valuable Sponsors</h5>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-7 text-center text-md-left" id="spns">
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+    </div>
+    <!-- Social buttons -->
+    </footer>
+    <!--Footer Links-->
+
+<!--Footer-->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+    <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+    <div class="row mt-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Integration 2023</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>The Annual Techno-Cultural-Sports festival of Indian Statistical Institute, Kolkata, here at 203, Barrackpore Trunk Road, Kolkata - 700108.</p>
+        </div>
+        <!--/.First column-->
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Events</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="#!">Chess</a>
+            </p>
+            <p>
+                <a href="#!">Quizzes</a>
+            </p>
+            <p>
+                <a href="#!">Band-E-Thlon</a>
+            </p>
+            <p>
+                <a href="#!">Alaap</a>
+            </p>
+        </div>
+        <!--/.Second column-->
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Useful links</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="http://www.isical.ac.in/~integration/mtrp.html">MTRP</a>
+            </p>
+            <p>
+                <a href="#!">Hackathon</a>
+            </p>
+            <p>
+                <a href="#!">Showdowns Websites</a>
+            </p>
+            <p>
+                <a href="http://www.isical.ac.in">ISI homepage</a>
+            </p>
+        </div>
+        <!--/.Third column-->
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Contact</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <i class="fa fa-home mr-3"></i> Integration 2023</p>
+            <p>
+                <i class="fa fa-envelope mr-3"></i> <a href=mailto:integration.isikol@gmail.com>integration.isikol@gmail.com</a></p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 7980136941</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 7811956054</p>
+        </div>
+        <!--/.Fourth column-->
+
+    </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+        <div class="text-center">
+                © 2023 Copyright:
+                <a href="https://www.isical.ac.in/integration"> Integration.ISI</a>
+        
+        <script type="text/javascript" src="http://counter2.fcs.ovh/private/counter.js?c=99dc7e2d3dfdbbcebc67fdffaf25f6a6"></script>
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            var i=2;
+                while (i<56) {
+                var str = '<div class="row mt-3"><div class="col-md-4"><div class="thumbnail"><a href="./img/mtrp/gallery/'+ i +'.jpg" target="_blank"><img src="./img/mtrp/gallery/'+ i +'.jpg" style="width: 100%" class="rounded"></a></div></div><div class="col-md-4"><div class="thumbnail"><a href="./img/mtrp/gallery/'+ (i+1) +'.jpg" target="_blank"><img src="./img/mtrp/gallery/'+ (i+1) +'.jpg" style="width: 100%" class="rounded"></a></div></div><div class="col-md-4"><div class="thumbnail"><a href="./img/mtrp/gallery/'+ (i+2) +'.jpg" target="_blank"><img src="./img/mtrp/gallery/'+ (i+2) +'.jpg" style="width: 100%" class="rounded"></a></div></div></div>';
+                $("#gallery").append(str);
+                i = (i+3);
+            }
+            
+            var text = "<marquee>";
+            for (i = 1; i < 22; i++) {
+                text += "<img src='./img/sponsors/" + i + ".jpg' style = 'height:75px'>";
+            }
+            text += "</marquee>";
+            $("#spns").html(text);
+         });
+         
+    </script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script> 
+       
+    
+
+</body>
+</html>

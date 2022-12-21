@@ -1,0 +1,94 @@
+/* ----------- COMMON ---------- */
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+    background: #273746;
+    font-family: "Open Sans";
+}
+
+/*section {
+    padding-top: 10vh;
+}*/
+
+.lg-viewer {
+    display: block;
+}
+
+.sm-viewer {
+    display: none;
+}
+
+.jconfirm-box {
+    color: black;
+}
+
+.section-heading {
+    font-family: "Abril Fatface";
+    text-shadow: 2px 2px 3px black, 3px 3px 5px black;
+}
+
+/* ----------- NAVBAR ---------- */
+
+.navbar {
+    background: black;
+}
+
+.navbar-brand {
+    padding-bottom: 0;
+    margin-top: -1rem;
+    color: white !important;
+    font-family: "Merienda One";
+}
+
+.nav-link {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    color: white !important;
+}
+
+.nav-item {
+    font-size: 15px;
+}
+
+.nav-item.active {
+    border-bottom: 5px solid aqua !important;
+}
+
+.nav-item.active > .nav-link {
+    color: aqua !important;
+}
+
+.nav-item > .nav-link:hover {
+    color: aqua !important;
+}
+
+.nav-btn {
+    font-weight: bolder;
+    color: white;
+    background-color: #273746;
+}
+
+.nav-btn:hover {
+    color: #273746 !important;
+    background-color: white !important;
+}
+
+.navbar-toggler {
+    border: 2px solid white !important;
+    border-radius: 25%;
+}
+
+.navbar-text {
+    font-family: "Merienda One";
+    font-size: 18px;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 512px) {
+    .navbar-text {
+        font-family: "Merienda One";
+        font-size: 14px;
+        margin-right: 2rem;
+    }
+}

@@ -1,0 +1,55 @@
+#mainjumbo > .display-4 {
+    font-family: "Abril Fatface";
+}
+
+#mainjumbo > .lead {
+    font-family: "Bookman Old Style";
+    font-size: 1.5rem;
+
+}
+
+#mainjumbo {
+    background: #444444;
+    background-image: url('../../AppData/Images/math-cover.jpg');
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    text-shadow: 2px 2px 4px black;
+}
+
+/* ---------- SCROLL TO TOP BUTTON ------------- */
+
+.scroll-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #273746;
+    background: rgba(255, 255, 255, 0.8);
+    line-height: 46px;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+    color: #273746;
+}
+
+.scroll-to-top:hover {
+    background: rgba(81, 239, 250, 0.8);
+}
+
+.scroll-to-top i {
+    font-weight: 1000;
+}
+
+
+/* ===================================== */
+.sum-it-logo {
+    filter: drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 5px white) drop-shadow(0px 0px 10px white);
+    -webkit-filter: drop-shadow(0px 0px 2px white) drop-shadow(0px 0px 5px white) drop-shadow(0px 0px 10px white);
+
+}
+
