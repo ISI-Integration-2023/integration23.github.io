@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Subhrajyoty Roy">
+    <title>Tech Chapter | Integration</title>
+    <link rel="icon" href="./img/integration_logo_icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/techstyle.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").css({
+                'overflow-x':'hidden',
+                'width':'100%',
+                'overflow-y':'auto',
+            });
+            $(".card-link").click(function(){
+                $("main").css({
+                    background: "#444"
+                });
+            });
+            $(".close").click(function(){
+                $("main").css({
+                    background: "url('./img/techfest/tech-cover.png')",
+                    'background-size': 'cover',
+                });
+            });
+            var text = "<marquee>";
+            var i;
+            for (i=1; i<22; i++) {
+                text += "<img src='./img/sponsors/"+ i +".jpg' style = 'height:75px'>";
+            }
+            text += "</marquee>";
+            $('#footer-sponsor').html(text);
+        });
+    </script>
+    <style>
+        .btn-primary a {
+            color: ghostwhite;
+        }
+        /* The Modal (background) */
+
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding:0;
+  border: 2px solid #888;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.thumbnails {
+    text-align:center;
+}
+
+.thumbnails > li {
+    display: inline-block;
+    *display:inline; /* ie7 fix */
+    float: none; /* this is the part that makes it work */
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 20px 20px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 16px 16px;}
+
+.modal-footer {
+  padding: 16px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.block {
+            display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: left;}
+                    .block:click {
+  background-color: #ddd;
+  color: black;
+}
+
+.block2 {
+            display: block;
+                    border-radius: 6px;
+                    width: 60%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: center;}
+                    .block:click {
+  background-color: #ddd;
+  color: black;}
+
+  .block3 {
+            display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: center;}
+                    .block:click {
+  background-color: #ddd;
+  color: black;
+}
+
+
+  #outer
+{
+    width:100%;
+    text-align: left;
+}
+.inner
+{
+    display: inline-block;
+}
+
+                    details > summary {
+                        display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: left;
+}
+details>summary:hover{
+    background-color: #ddd;
+  color: black;
+}
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  width:100%;
+  margin: 3;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}  
+
+details2 > summary {
+                        display: block;
+                    border-radius: 6px;
+                    width: 100%;
+                    border: none;
+                    background-color: #04AA6D;
+                    padding: 14px 14px;
+                    color:#eeeeee;
+                    font-size: 16px;
+                    cursor: pointer;
+                    text-align: left;
+}
+
+
+.caret {
+    display: inline-block;
+    width: 10;
+    height: 10;
+    margin-left: 2px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border-top: 6px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;            
+}
+    </style>    
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").css({
+                'overflow-x':'hidden',
+                'overflow-y':'auto',
+                'width':'100%',
+            });
+            $(".card-link").click(function(){
+                $("main").css({
+                    background: "#444",
+                    'background-blend-mode':'lighten',
+                });
+            });
+            $(".close").click(function(){
+                $("main").css({
+                    background: "url('./img/culturalfest/culture-cover.jpg')",
+                    'background-size': 'cover',
+                    'background-position': 'center center',
+                });
+            });
+
+            var text = "<marquee>";
+            var i;
+            for (i = 1; i < 22; i++) {
+                text += "<img src='./img/sponsors/" + i + ".jpg' style = 'height:75px'>";
+            }
+            text += "</marquee>";
+            $('#footer-sponsor').html(text);
+        });
+
+
+
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg unique-color-dark fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" style="color:#fff" href="./index.html">
+                    <img src="./img/Integration_logo.png" height="30" class="d-inline-block align-top" alt="">
+                    Integration 2023
+                </a>
+                    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                                <i class="fa fa-envelope ml-5 gylphs"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a href="https://www.facebook.com/integration.isi">
+                                    <i class="fa fa-facebook-official ml-5 gylphs"></i>
+                                </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.twitter.com/integration_isi">
+                                <i class="fa fa-twitter ml-5 gylphs"></i>
+                            </a>
+                        </li>
+
+                            
+                    </ul>
+
+            </div>
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="text-center">
+                <h1 class="mb-5 mt-5 pt-5 display-1" id="main-title">Tech Chapter</h1>
+                <hr>
+                <h1 class="mb-3 mt-3" id="festname">Integration <span>2023</span>
+                    <img src="./img/Integration_logo.png" style="width: 50px">
+                </h1>
+                <hr>
+            </section>
+
+                
+                <!-- Mathgeek -->
+                <div class="card-deck pb-5 mt-5">  
+                    <div class="col-sm-6">
+                    <a type="button" class="card card-link" data-toggle="modal" data-target="#mg">
+                        <img class="card-img-top" src="./img/techfest/mathgeek_cover.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Math Geek</h5>
+                        <p class="card-text">Mathgeek is an online innovative mathematical competition, giving you opportunity to show off your talent of solving mathematical riddles.</p>
+                        <p class="card-text"><small class="text-muted">Prizes worth Rs. 5,000 is waiting for you to win!</small></p>
+                            </div>
+                    </a>
+                    <div class="modal fade" id="mg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalLongTitle">Math Geek</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+                                        <p><strong>Ciao amici! </strong></p>
+                                        <p><strong>After wait of two years Mathgeek, the Mathematical puzzle solving battle has renaissanced. Gear up to dismantle mathematical paradoxes and win prizes worth 5000 INR in this online event. If you relish puzzle solving register soon and grab the opportunity to blue-ribbon the prize money, certificates with the best, creative solutions.</strong></p></br>
+                                                                                
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Event Poster</h4></summary>
+                                        </br></br>
+                
+                                        <div class="center">
+                                            <div class="thumbnails">
+                                                <a href="./img/posters/mg23.jpg" target="_blank">
+                                                    <img src="./img/posters/mg23.jpg"  style="width: 35%" >
+                                                </a>
+                                            </div>
+                                            </div>
+                                            </details>
+                                        </br></br>
+                
+                                        <details>
+                                            
+                                            <summary><h4><span class="caret"></span>Prize Pool</h4></summary>
+                                        
+                                    </br>
+                                        </br>
+                                       
+                                        <ul>
+                                            <li>A total of <strong>Rs. 5000</strong> will be up for grabs for the top performing teams.</li>
+                                            <li>Additional to the top rankers in the Finale, a special prize will be reserved for the <strong>Best Solo Team</strong>, if not awarded already. Thus each team is eligible for only one prize.</li>
+                                            </ul>
+                                            </details>
+                                        </br></br>
+                
+                
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Date & Timings</h4></summary>
+                                        </br></br>
+                                        <li>Prelims : 21st January, 4PM - 7PM</li>
+                                        <li>Finale : 22nd January, 4PM - 8PM</li>
+                                            </details>
+                                        
+                                    </br>
+                                        </br>
+                
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Registration</h4></summary>
+                                        </br></br>
+                
+                                            <li>Eligibility :</li>
+                                            <ol><li>Each team must contain atmost 2 members.</li>
+                                            <li>No age limit.</li></ol>
+                                            <li>Registration Fees : Rs. 150/- per team.</li></br></br>
+                                            <div class="d-flex justify-content-center">
+                                                <button onclick="popup('integration-mg-23');" class="tsbutton">Register Now</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
+                                             </div></br></br>
+                                            <li>Confirmation will be sent through mail. If not recieved before 18th January, mail to mathgeek.integration@gmail.com or contact the numbers mentioned below.</li>
+                                            <li>Last date for registration is 20th January, 2023.</li>
+                                            </br>
+                                        </details>
+                                        </br></br>
+                
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>General Rules and Regulations</h4></summary>
+                                        </br></br>
+                
+                                        <ul>
+                                            <li>There will be two tiers of this online competition : Prelims and Finale.</li>
+                                            <li>Not much professional knowledge is needed except +2 level and a few undergraduate topics.</li>
+                                            <li>Prelims will contain numerical questions, whereas the Finale will be subjective. Both will contain mathematical puzzles of some form. Credits will be there for creative solutions in the subjective round.</li>
+                                            <li>Exam links and rules will be sent through the mail on or before 20th January.</li>
+                                            <li>The organizers reserve the right to change any of the rules, timings and other details such as prize money at any point of time. In case of any dispute, the decision of the organizers is final.</li>
+                                            </ul>
+                                            </details>
+                                        </br></br>
+                
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Contact Us</h4></summary>
+                                        </br></br>
+                                        <ul>
+                                            <li><strong>Email: </strong> <a href=mailto:creativewriting.integration@gmail.com>mathgeek.integration@gmail.com</a></li>
+                                            <li><strong>Purushottam :</strong> 98319 55754</li>
+                                            <li><strong>Dhruba :</strong> 91233 34662</li>
+                                            <li><strong>Ritabrata: </strong> 93306 91623</li>
+                                        </ul>
+                                        </details></br></br>
+                                            
+                                    </div>
+                            </div>
+                    </div>
+                    </div>
+                    <!--Shabdoshel-->
+                    </div>
+
+                    <div class="col-sm-6">
+                        <!-- Data Fest -->
+                            <a type="button" class="card card-link" data-toggle="modal" data-target="#datafest">
+                                <img class="card-img-top" src="./img/techfest/statwars_cover.png" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Data Fest</h5>
+                                <p class="card-text">Integration 2023 presents Data Fest : Lets Talk Tech.</p>
+                                    </div>
+                            </a>
+                            <div class="modal fade" id="datafest" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title" id="exampleModalLongTitle">Data Fest</h2>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                            <div class="modal-body">
+                                                Integration presents with the best opportunity to show your data-analytical skills off in this competition : Create the best model, solve the problem statement and grab the prizes on your way home!
+                                            </br></br>
+
+                                            <details>
+                  
+                                                <summary><h4><span class="caret"></span>Event Poster</h4></summary>
+                                            </br></br>
+
+
+                                            <div class="center">
+                                                <div class="thumbnails">
+                                                    <a href="./img/posters/datafest23.png" target="_blank">
+                                                        <img src="./img/posters/datafest23.png"  style="width: 35%" >
+                                                    </a>
+                                                </div>
+                                                </div>
+                                                </details>
+                                            </br></br>
+
+                                            <details>
+                  
+                                                <summary><h4><span class="caret"></span>Prize Pool: Rs. 6000</h4></summary>
+                                            </br></br>
+
+                                        <ul>
+                                            <li><strong>Winner : </strong>Rs. 3000</li>
+                                            <li><strong>1st Runners Up : </strong>Rs. 2000</li>
+                                            <li><strong>2nd Runners Up : </strong>Rs. 1000</li>
+                                            </ul>
+                                            
+                                        </br>
+                                    </details>
+                                </br></br>
+
+                                <details>
+                  
+                                    <summary><h4><span class="caret"></span>Date & Timings</h4></summary>
+                                </br></br>
+
+                                    The competition will be held online at <strong>Kaggle</strong> between <strong>15th – 31st January</strong>. The link for the Kaggle Competition will be sent to the participants.
+
+                                </details>
+                                                </br>
+                                               </br>
+
+                                <details>
+                  
+                                               <summary><h4><span class="caret"></span>Registration</h4></summary>
+                                           </br></br>
+                                           <div class="d-flex justify-content-center">
+                                            <button onclick="popup('integration-datafest-23');" class="tsbutton">Register Now</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
+                                         </div></br></br>
+                                           <ul>
+                                            <li>There is no age limit. This competition is open to all.</li>
+                                            <li>Registration fee: Each of the participant should pay Rs. 100 to participate.</li>
+                                            <li>Participants will not be allowed to participate without paying. In case of 
+                                                any monetary issue, kindly contact the organizers with necessary documents 
+                                                and valid id etc.</li>
+                                           </ul>
+ 
+                                        </br>
+                                           </details>
+                                        </br></br>
+
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Rules and Regulations</h4></summary>
+                                        </br></br>
+
+                                        <ol>
+                                            <li>Fees once paid is <strong>non-refundable</strong>.</li></br>
+                                            <li>Noone should copy from anywhere. If someone found to cheat, he/she will be 
+                                                disqualified from the competition.</li>
+                                            More event details will be updated soon, and mailed to the registered candidates.
+                                            </ol>
+                                            </details>
+                                        </br></br>
+
+                                    
+                                        <details>
+                  
+                                            <summary><h4><span class="caret"></span>Contact Us</h4></summary>
+                                        </br></br>
+
+                                        <ul>
+                                            <li><strong>Email: </strong> <a href=mailto:datafest.integration@gmail.com>datafest.integration@gmail.com</a></li>
+                                            <li><strong>Rishi Dey Chowdhury :</strong> 7407866466</li>
+                                            <li><strong>Samahriti Mukherjee :</strong> 6290309878</li>
+                                    
+                                        </ul></details></br></br>
+                                                 </div>
+                                    </div>
+                            </div>
+                            </div>
+                        <!--DataFest-->
+                    </div>
+                </div>
+                
+                <div class="card-deck pb-5 mt-5">
+                    <div class="col-sm-6">
+                    <!--Cryptex-->
+                        <a type="button" class="card card-link" data-toggle="modal" data-target="#cryptex">
+                            <img class="card-img-top" src="./img/techfest/cryptex.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Cryptex</h5>
+                            <p class="card-text">Integration presents Cryptex : the online war-game based event.</p>
+                            </div>
+                        </a></div>
+                        <div class="modal fade" id="cryptex" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalLongTitle">Cryptex</h2>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+                                        Cryptex brings a opportunity for everybody out there with a interest in Cryptography and problem solving in general. So, sharpen your mind and confidence and decrypt the answers!
+                                    </br></br>
+
+                                    <details>
+  
+                                        <summary><h4><span class="caret"></span>Event Poster</h4></summary>
+                                    </br></br>
+
+
+                                    <div class="center">
+                                        <div class="thumbnails">
+                                            <a href="./img/posters/cryptex-poster23.jpg" target="_blank">
+                                                <img src="./img/posters/cryptex-poster23.jpg"  style="width: 35%" >
+                                            </a>
+                                        </div>
+                                        </div>
+                                        </details>
+                                    </br></br>
+
+                                        <details>
+  
+                                            <summary><h4><span class="caret"></span>Prize Pool</h4></summary>
+                                        
+                                    </br>
+                                        </br>
+                                            A total of Rs. 10,000 is ready to be won, so do not miss the opportunity!
+                                        </details>
+                                    </br></br>
+                                       <details>
+  
+                                        <summary><h4><span class="caret"></span>Date & Timings</h4></summary>
+                                    </br>
+                                    <ul>
+                                        <li><strong>Date:</strong> 28-29 January, 2023</li>
+                                    </ul>
+                                        
+                                    </details> </br>
+                               </br>
+
+                               <details>
+  
+                                <summary><h4><span class="caret"></span>Registration</h4></summary>
+                            
+                            </br></br>
+                            <div class="d-flex justify-content-center">
+                                <button onclick="popup('integration-cryptex-23');" class="tsbutton">Register Now</button><noscript id="tsNoJsMsg">Javascript on your browser is not enabled.</noscript><script src="https://www.townscript.com/static/Bookingflow/js/townscript-widget.nocache.js" type="text/javascript"></script>
+                             </div> </br></br>
+                                    <ul>
+                                        <li><strong> Registration Fees: Rs. 200</strong> per Team</li>
+                                        <li>Team size - <strong>INDIVIDUAL</strong> or <strong>TWO</strong> per team.</li>
+                                        <li>Based on your registration, you will be given an authentication pair to enter the contest.</li>
+                                        <li>Only a limited registrations are allowed, so Hurry Up!</li>
+                                        
+                                    </ul>
+                                    
+                                    </br>
+                                     
+                                     </details>
+                                    
+                                    </br></br>
+
+                                    <details>
+  
+                                        <summary><h4><span class="caret"></span>Rules and Regulations</h4></summary>
+                                    
+                                </br>
+                                    </br>
+
+                                   
+                                    <ul>
+                                        <li>This is a single stage <strong>ONLINE</strong> event having 20 levels (progressive).</li>
+                                        <li>Each level will contain some puzzles from topic mentioned in the prereqequisites.</li>
+                                        <li>Progressive - Each level must be completed before going on to the next level.</li>
+                                        <li>Cheating of any kind, or publishing solutions during the event on any online forum by any team member will disqualify the team.</li>
+                                        <li>The organisers reserve the right to change any of the rules, timings and other details at any point of time. In case of any dispute, the decsion of the organisers will be final.</li></br>
+                                        <li>The prerequisites are mentioned below : 
+                                            <ol>
+                                                <li>Abstract Algebra</li>
+                                                <li>Linear Algebra</li>
+                                                <li>Shell Commands</li>
+                                                <li>Cryptography</li>
+                                            </ol>                                          
+                                        </ul>
+                                    </details>
+
+                                </br></br>
+
+                                <details>
+  
+                                    <summary><h4><span class="caret"></span>Contact Us</h4></summary>
+                                
+                            </br>
+                                </br>
+
+                                   
+                                    <ul>
+                                        <li><strong>Tejas :</strong> 95949 62919</li>
+                                        <li><strong>Pritam :</strong> 89101 26876</li>
+                                        <li><strong>Pushpa :</strong> 94528 00792</li>
+                                    </ul>
+                                       </details></br></br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--Cryptex-->
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+
+                
+        </div>
+    </main>
+
+
+    <!-- #################################################################### -->
+
+
+    <!--Footer-->
+   <footer class="page-footer font-small darkgrey">
+
+    <!-- Social buttons -->
+    <div class="danger-color">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 white-text">Our Valuable Sponsors</h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-7 text-center text-md-left" id = "footer-sponsor">
+                    </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+    </div>
+    <!-- Social buttons -->
+    </footer>
+    <!--Footer Links-->
+
+<!--Footer-->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+    <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+    <div class="row mt-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Integration 2023</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>The Annual Techno-Cultural-Sports festival of Indian Statistical Institute, Kolkata, here at 203, Barrackpore Trunk Road, Kolkata - 700108.</p>
+        </div>
+        <!--/.First column-->
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Events</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="#!">Chess</a>
+            </p>
+            <p>
+                <a href="#!">Quizzes</a>
+            </p>
+            <p>
+                <a href="#!">Band-E-Thlon</a>
+            </p>
+            <p>
+                <a href="#!">Alaap</a>
+            </p>
+        </div>
+        <!--/.Second column-->
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Useful links</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="http://www.isical.ac.in/~integration/mtrp/">MTRP</a>
+            </p>
+            <p>
+                <a href="#!">Hackathon</a>
+            </p>
+            <p>
+                <a href="#!">Showdowns Websites</a>
+            </p>
+            <p>
+                <a href="http://www.isical.ac.in">ISI homepage</a>
+            </p>
+        </div>
+        <!--/.Third column-->
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Contact</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <i class="fa fa-home mr-3"></i> Integration 2023</p>
+            <p>
+                <i class="fa fa-envelope mr-3"></i> integration.isikol@gmail.com</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 9163822172 (Soham Mallick)</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 9547901596 (Sounak Das)</p>
+        </div>
+        <!--/.Fourth column-->
+
+    </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2023 Copyright:
+        <a href="https://www.isical.ac.in/integration"> Integration.ISI</a>
+        <script type="text/javascript" src="http://counter2.fcs.ovh/private/counter.js?c=99dc7e2d3dfdbbcebc67fdffaf25f6a6"></script>
+        
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
