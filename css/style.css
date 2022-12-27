@@ -9,6 +9,10 @@
     src: url("../font/game-of-thrones/Game\ of\ Thrones.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body,
 header,
